@@ -1,0 +1,65 @@
+{
+  "schema": "invariant-systems/public_plan_commitment.v1",
+  "commitment_id": "02-nisq-readiness-2026-05-02-poststudy-baseline",
+  "commitment_timestamp_utc": "2026-05-02T09:38:19Z",
+  "repository_url": "https://github.com/invariant-systems-ai/public-plan-commitments",
+  "campaign": {
+    "program_id": "02-nisq-readiness",
+    "title": "An Evidence-First Reproducibility Capsule for NISQ Benchmarking",
+    "declared_plan_date": "2026-02-01",
+    "commitment_kind": "post-study public chronology baseline"
+  },
+  "interpretation": {
+    "supports": [
+      "public Git chronology for the preserved plan surface",
+      "public Git chronology for the timestamp-boundary note",
+      "public binding of the released Zenodo packet checksum",
+      "day-zero workflow target for future campaigns"
+    ],
+    "does_not_support": [
+      "independent preregistration of the current NISQ study",
+      "a pre-execution registry timestamp for the 2026-02-01 plan",
+      "any stronger retroactive claim about preregistration status"
+    ]
+  },
+  "source_repository": {
+    "path": "/home/kaleidos/Desktop/invariant-systems-lab/invariant-systems-research",
+    "head_commit": "39c7f132cf08c4a1deaf5d2017de999290c90889",
+    "note": "The copied source surfaces are bound by the SHA256 digests recorded below and may include local modifications beyond the recorded source-repository HEAD commit."
+  },
+  "zenodo": {
+    "record_url": "https://zenodo.org/records/19960217",
+    "version_doi": "10.5281/zenodo.19960217",
+    "concept_doi": "10.5281/zenodo.19954163",
+    "published_tarball_sha256": "72cdda950ea4878b0673c3bc424de6fff5e864d99e4af5b9e8bdffca87b41462"
+  },
+  "artifacts": [
+    {
+      "role": "author_declared_evaluation_plan",
+      "public_copy": "source/PREREGISTRATION_PUBLIC.json",
+      "source_repo_path": "3-proof/3p-deliverable/publications/arxiv/02-nisq-readiness/anc/PREREGISTRATION_PUBLIC.json",
+      "sha256": "708c7194ad2402d1b8fa0dd9f0a947fd5468673cb08e9eb89c753846a7a2b567"
+    },
+    {
+      "role": "timestamp_boundary_note",
+      "public_copy": "source/24_EXECUTION_ORDER_AND_TIMESTAMP_POSTURE_20260501.md",
+      "source_repo_path": "3-proof/3p-deliverable/publications/arxiv/02-nisq-readiness/anc/24_EXECUTION_ORDER_AND_TIMESTAMP_POSTURE_20260501.md",
+      "sha256": "fc0ccb556b1c28745ee7748db172542ae62774abfec3e646cc1a9b2c4f2d6b1b"
+    },
+    {
+      "role": "zenodo_tarball_checksum_sidecar",
+      "public_copy": "source/nisq-readiness-evidence-capsule-v2026.05.01-zenodo.tar.gz.sha256",
+      "source_repo_path": "3-proof/3p-deliverable/publications/arxiv/02-nisq-readiness/nisq-readiness-evidence-capsule-v2026.05.01-zenodo.tar.gz.sha256",
+      "sha256": "154b0348295bbcc5ceaf47cd4b18660d29ec55474cf8e92e2c9daeb659045189",
+      "declared_tarball_sha256": "72cdda950ea4878b0673c3bc424de6fff5e864d99e4af5b9e8bdffca87b41462"
+    }
+  ],
+  "future_policy": {
+    "day_zero_commit_required": true,
+    "transparency_logs": [
+      "Rekor",
+      "OpenTimestamps"
+    ],
+    "policy_note": "Future campaigns should commit the declared plan hash here on day zero and mirror the same hash to at least one external transparency log."
+  }
+}
