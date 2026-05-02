@@ -1,0 +1,78 @@
+{
+  "description": "Noise model comparison: observed CHSH S vs depolarizing predictions",
+  "model": "S_noisy = 2*sqrt(2) * (1-eps_2q) * (1-2*eps_ro)^2",
+  "results": [
+    {
+      "backend": "ibm_boston",
+      "epsilon_2q": 0.0052,
+      "epsilon_ro": 0.008,
+      "S_predicted_gate_only": 2.813719,
+      "S_predicted_gate_plus_readout": 2.724401,
+      "S_observed_mean": 2.781703,
+      "S_observed_std": 0.015118,
+      "n_runs": 7,
+      "delta_gate_only": -0.032016,
+      "delta_gate_plus_readout": 0.057303
+    },
+    {
+      "backend": "ibm_fez",
+      "epsilon_2q": 0.0089,
+      "epsilon_ro": 0.012,
+      "S_predicted_gate_only": 2.803254,
+      "S_predicted_gate_plus_readout": 2.670313,
+      "S_observed_mean": 2.410238,
+      "S_observed_std": 0.039565,
+      "n_runs": 3,
+      "delta_gate_only": -0.393016,
+      "delta_gate_plus_readout": -0.260075
+    },
+    {
+      "backend": "ibm_kingston",
+      "epsilon_2q": 0.0058,
+      "epsilon_ro": 0.009,
+      "S_predicted_gate_only": 2.812022,
+      "S_predicted_gate_plus_readout": 2.711701,
+      "S_observed_mean": 2.702637,
+      "S_observed_std": 0.021749,
+      "n_runs": 3,
+      "delta_gate_only": -0.109386,
+      "delta_gate_plus_readout": -0.009064
+    },
+    {
+      "backend": "ibm_marrakesh",
+      "epsilon_2q": 0.0055,
+      "epsilon_ro": 0.01,
+      "S_predicted_gate_only": 2.812871,
+      "S_predicted_gate_plus_readout": 2.701481,
+      "S_observed_mean": 2.732503,
+      "S_observed_std": 0.009894,
+      "n_runs": 3,
+      "delta_gate_only": -0.080368,
+      "delta_gate_plus_readout": 0.031022
+    },
+    {
+      "backend": "ibm_pittsburgh",
+      "epsilon_2q": 0.0062,
+      "epsilon_ro": 0.011,
+      "S_predicted_gate_only": 2.810891,
+      "S_predicted_gate_plus_readout": 2.688572,
+      "S_observed_mean": 2.50987,
+      "S_observed_std": 0.185514,
+      "n_runs": 7,
+      "delta_gate_only": -0.301021,
+      "delta_gate_plus_readout": -0.178702
+    },
+    {
+      "backend": "ibm_torino",
+      "epsilon_2q": 0.007,
+      "epsilon_ro": 0.045,
+      "S_predicted_gate_only": 2.808628,
+      "S_predicted_gate_plus_readout": 2.325825,
+      "S_observed_mean": 1.96818,
+      "S_observed_std": 0.022742,
+      "n_runs": 3,
+      "delta_gate_only": -0.840448,
+      "delta_gate_plus_readout": -0.357645
+    }
+  ]
+}

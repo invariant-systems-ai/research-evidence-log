@@ -1,0 +1,420 @@
+{
+  "kind": "arxiv_ancillary_manifest_v1",
+  "date_utc": "2026-02-11",
+  "paper_intent": "Single evidence-first paper; CHSH is an evidence lane/case-study.",
+  "workloads": [
+    {
+      "id": "A1_BELL_2Q",
+      "sha256": "36b0093d1e65a7bb844408c3dbe5d5c5cdb6b99fda6edaaf89dd303c51d4607a",
+      "format": "OPENQASM_2",
+      "description": "Bell pair preparation + Z-basis measurement."
+    },
+    {
+      "id": "A2_GHZ_3Q",
+      "sha256": "5cbb7e83b0dacac5a5da5ab89a1fc70fe54048bb2bd1f128d3b8d3d6f3512ce9",
+      "format": "OPENQASM_2",
+      "description": "3-qubit GHZ preparation + Z-basis measurement."
+    },
+    {
+      "id": "A3_GHZ_5Q",
+      "sha256": "f1c3ddf8d2632baaff5153037913f54b26c2fad71de1f97d4284f729de89348f",
+      "format": "OPENQASM_2",
+      "description": "5-qubit GHZ preparation + Z-basis measurement."
+    },
+    {
+      "id": "A4_MIRROR_1Q",
+      "sha256": "b2bfec43056a494ee3b3336282d8b2ae0df2164d82d86cccddbdfd60d328d7c1",
+      "format": "OPENQASM_2",
+      "description": "Single-qubit mirror circuit returning to |0>."
+    }
+  ],
+  "chsh_evidence": {
+    "claim_gate": {
+      "must_satisfy": [
+        "S > 2.0",
+        "ci95_low > 2.0"
+      ],
+      "headline_requires": "Replicates on >=2 backends OR >=2 independent runs with declared stopping rules."
+    },
+    "runs": [
+      {
+        "backend": "ibm_boston",
+        "job_id": "d5vltcd7fc0s73au5ub0",
+        "shots": 8192,
+        "S": 2.7841796875,
+        "ci95": [
+          2.7530925289946095,
+          2.8152668460053905
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_boston",
+        "job_id": "d5vlte3uf71s73ciqjlg",
+        "shots": 8192,
+        "S": 2.7890625,
+        "ci95": [
+          2.758019802774923,
+          2.820105197225077
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_boston",
+        "job_id": "d5vm0gjuf71s73ciqn30",
+        "shots": 16384,
+        "S": 2.78076171875,
+        "ci95": [
+          2.7587478410636725,
+          2.8027755964363275
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_boston",
+        "job_id": "d5vm53qbju6s73bc10fg",
+        "shots": 8192,
+        "S": 2.753662109375,
+        "ci95": [
+          2.7222523672623957,
+          2.7850718514876043
+        ],
+        "entangled_ci95": true,
+        "note": "Robustness: second-best 2q edge (edge_rank=2)."
+      },
+      {
+        "backend": "ibm_boston",
+        "job_id": "d64vsnbtraac73bj1gk0",
+        "shots": 8192,
+        "S": 2.771728515625,
+        "ci95": [
+          2.7405096052837488,
+          2.8029474259662512
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_boston",
+        "job_id": "d64vsnrtraac73bj1glg",
+        "shots": 8192,
+        "S": 2.796630859375,
+        "ci95": [
+          2.7656669282094475,
+          2.8275947905405525
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_boston",
+        "job_id": "d64vsoao8gvs73f53cig",
+        "shots": 8192,
+        "S": 2.7958984375,
+        "ci95": [
+          2.764932067770883,
+          2.826864807229117
+        ],
+        "entangled_ci95": true,
+        "note": "Robustness: 2nd-best edge."
+      },
+      {
+        "backend": "ibm_boston",
+        "job_id": "d64vsojc4tus73fge28g",
+        "shots": 8192,
+        "S": 1.3642578125,
+        "ci95": [
+          1.326343475989718,
+          1.402172149010282
+        ],
+        "entangled_ci95": false,
+        "note": "Negative control: product state."
+      },
+      {
+        "backend": "ibm_fez",
+        "job_id": "d64vspns6ggc73fjmrrg",
+        "shots": 8192,
+        "S": 2.4521484375,
+        "ci95": [
+          2.4179460006580538,
+          2.4863508743419462
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_fez",
+        "job_id": "d64vsq3traac73bj1gpg",
+        "shots": 8192,
+        "S": 2.37353515625,
+        "ci95": [
+          2.3386941542684694,
+          2.4083761582315306
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_fez",
+        "job_id": "d64vsqjtraac73bj1gr0",
+        "shots": 8192,
+        "S": 2.405029296875,
+        "ci95": [
+          2.3704395460624306,
+          2.4396190476875694
+        ],
+        "entangled_ci95": true,
+        "note": "Robustness: 2nd-best edge."
+      },
+      {
+        "backend": "ibm_fez",
+        "job_id": "d64vsr3c4tus73fge2d0",
+        "shots": 8192,
+        "S": 1.312744140625,
+        "ci95": [
+          1.274443343839042,
+          1.351044937410958
+        ],
+        "entangled_ci95": false,
+        "note": "Negative control: product state."
+      },
+      {
+        "backend": "ibm_kingston",
+        "job_id": "d64vsrbc4tus73fge2eg",
+        "shots": 8192,
+        "S": 2.68310546875,
+        "ci95": [
+          2.6509868470100053,
+          2.7152240904899947
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_kingston",
+        "job_id": "d64vsrrtraac73bj1gu0",
+        "shots": 8192,
+        "S": 2.72607421875,
+        "ci95": [
+          2.6943918189850873,
+          2.7577566185149127
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_kingston",
+        "job_id": "d64vssfs6ggc73fjms0g",
+        "shots": 8192,
+        "S": 2.69873046875,
+        "ci95": [
+          2.666768221350999,
+          2.730692716149001
+        ],
+        "entangled_ci95": true,
+        "note": "Robustness: 2nd-best edge."
+      },
+      {
+        "backend": "ibm_kingston",
+        "job_id": "d64vssrtraac73bj1gvg",
+        "shots": 8192,
+        "S": 1.292724609375,
+        "ci95": [
+          1.2544747891031909,
+          1.3309744296468091
+        ],
+        "entangled_ci95": false,
+        "note": "Negative control: product state."
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "job_id": "d64vstbc4tus73fge2hg",
+        "shots": 8192,
+        "S": 2.72607421875,
+        "ci95": [
+          2.694391833983084,
+          2.757756603516916
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "job_id": "d64vstqo8gvs73f53cqg",
+        "shots": 8192,
+        "S": 2.7275390625,
+        "ci95": [
+          2.695877841687024,
+          2.759200283312976
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "job_id": "d64vsubc4tus73fge2k0",
+        "shots": 8192,
+        "S": 2.743896484375,
+        "ci95": [
+          2.712392254908924,
+          2.775400713841076
+        ],
+        "entangled_ci95": true,
+        "note": "Robustness: 2nd-best edge."
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "job_id": "d64vsuvs6ggc73fjms4g",
+        "shots": 8192,
+        "S": 1.409423828125,
+        "ci95": [
+          1.3717055932180982,
+          1.4471420630319018
+        ],
+        "entangled_ci95": false,
+        "note": "Negative control: product state."
+      },
+      {
+        "backend": "ibm_pittsburgh",
+        "job_id": "d5vlt92bju6s73bc0nj0",
+        "shots": 8192,
+        "S": 2.6689453125,
+        "ci95": [
+          2.6367073311131106,
+          2.7011832938868894
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_pittsburgh",
+        "job_id": "d5vltb2bju6s73bc0nlg",
+        "shots": 8192,
+        "S": 2.663330078125,
+        "ci95": [
+          2.63103830637862,
+          2.69562184987138
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_pittsburgh",
+        "job_id": "d5vm0fabju6s73bc0r90",
+        "shots": 16384,
+        "S": 2.64501953125,
+        "ci95": [
+          2.622070244983699,
+          2.667968817516301
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_pittsburgh",
+        "job_id": "d5vm18juf71s73ciqnsg",
+        "shots": 8192,
+        "S": 1.2744140625,
+        "ci95": [
+          1.2358183006751744,
+          1.3130098243248256
+        ],
+        "entangled_ci95": false,
+        "note": "Negative control: product state (expected no violation)."
+      },
+      {
+        "backend": "ibm_pittsburgh",
+        "job_id": "d5vm52hmvbjc73acjqug",
+        "shots": 8192,
+        "S": 2.650634765625,
+        "ci95": [
+          2.6182359528315153,
+          2.6830335784184847
+        ],
+        "entangled_ci95": true,
+        "note": "Robustness: second-best 2q edge (edge_rank=2)."
+      },
+      {
+        "backend": "ibm_pittsburgh",
+        "job_id": "d64vsvfs6ggc73fjms60",
+        "shots": 8192,
+        "S": 2.30078125,
+        "ci95": [
+          2.2658554599220206,
+          2.3357070400779794
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_pittsburgh",
+        "job_id": "d64vsvvs6ggc73fjms7g",
+        "shots": 8192,
+        "S": 2.3642578125,
+        "ci95": [
+          2.329709537470244,
+          2.398806087529756
+        ],
+        "entangled_ci95": true
+      },
+      {
+        "backend": "ibm_pittsburgh",
+        "job_id": "d64vt0ao8gvs73f53cu0",
+        "shots": 8192,
+        "S": 2.276123046875,
+        "ci95": [
+          2.2410427589155106,
+          2.3112033348344894
+        ],
+        "entangled_ci95": true,
+        "note": "Robustness: 2nd-best edge."
+      },
+      {
+        "backend": "ibm_pittsburgh",
+        "job_id": "d64vt0rtraac73bj1h4g",
+        "shots": 8192,
+        "S": 1.640625,
+        "ci95": [
+          1.6052146914040775,
+          1.6760353085959225
+        ],
+        "entangled_ci95": false,
+        "note": "Negative control: product state."
+      },
+      {
+        "backend": "ibm_torino",
+        "job_id": "d64vt1ao8gvs73f53d00",
+        "shots": 8192,
+        "S": 1.978271484375,
+        "ci95": [
+          1.9406334428561587,
+          2.015909525893841
+        ],
+        "entangled_ci95": false
+      },
+      {
+        "backend": "ibm_torino",
+        "job_id": "d64vt1rtraac73bj1h70",
+        "shots": 8192,
+        "S": 1.942138671875,
+        "ci95": [
+          1.9042874163480081,
+          1.9799899274019919
+        ],
+        "entangled_ci95": false
+      },
+      {
+        "backend": "ibm_torino",
+        "job_id": "d64vt2bc4tus73fge2qg",
+        "shots": 8192,
+        "S": 1.984130859375,
+        "ci95": [
+          1.9465280411676706,
+          2.0217336775823296
+        ],
+        "entangled_ci95": false,
+        "note": "Robustness: 2nd-best edge."
+      },
+      {
+        "backend": "ibm_torino",
+        "job_id": "d64vt2rc4tus73fge2rg",
+        "shots": 8192,
+        "S": 0.979736328125,
+        "ci95": [
+          0.9389962910323193,
+          1.0204763652176807
+        ],
+        "entangled_ci95": false,
+        "note": "Negative control: product state."
+      }
+    ]
+  }
+}

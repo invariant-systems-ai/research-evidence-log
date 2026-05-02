@@ -1,0 +1,1257 @@
+{
+  "description": "Cross-backend workload difficulty correlation analysis",
+  "correlation_matrix": {
+    "ibm_boston": {
+      "ibm_boston": 1.0,
+      "ibm_fez": 0.8869407711036691,
+      "ibm_kingston": 0.9560958064743759,
+      "ibm_marrakesh": 0.9348186023913415,
+      "ibm_pittsburgh": 0.9392099992317001,
+      "ibm_torino": 0.5373971883388863
+    },
+    "ibm_fez": {
+      "ibm_boston": 0.8869407711036691,
+      "ibm_fez": 1.0,
+      "ibm_kingston": 0.902025177887247,
+      "ibm_marrakesh": 0.8797044012858908,
+      "ibm_pittsburgh": 0.9442999951575368,
+      "ibm_torino": 0.7277952716301131
+    },
+    "ibm_kingston": {
+      "ibm_boston": 0.9560958064743759,
+      "ibm_fez": 0.902025177887247,
+      "ibm_kingston": 1.0,
+      "ibm_marrakesh": 0.9640071254912593,
+      "ibm_pittsburgh": 0.9730395602275488,
+      "ibm_torino": 0.6347338228319791
+    },
+    "ibm_marrakesh": {
+      "ibm_boston": 0.9348186023913415,
+      "ibm_fez": 0.8797044012858908,
+      "ibm_kingston": 0.9640071254912593,
+      "ibm_marrakesh": 1.0,
+      "ibm_pittsburgh": 0.9504516835477689,
+      "ibm_torino": 0.6888858472488365
+    },
+    "ibm_pittsburgh": {
+      "ibm_boston": 0.9392099992317001,
+      "ibm_fez": 0.9442999951575368,
+      "ibm_kingston": 0.9730395602275488,
+      "ibm_marrakesh": 0.9504516835477689,
+      "ibm_pittsburgh": 1.0,
+      "ibm_torino": 0.6935395565288803
+    },
+    "ibm_torino": {
+      "ibm_boston": 0.5373971883388863,
+      "ibm_fez": 0.7277952716301131,
+      "ibm_kingston": 0.6347338228319791,
+      "ibm_marrakesh": 0.6888858472488365,
+      "ibm_pittsburgh": 0.6935395565288803,
+      "ibm_torino": 1.0
+    }
+  },
+  "p_value_matrix": {
+    "ibm_boston": {
+      "ibm_boston": 0.0,
+      "ibm_fez": 3.2817338691702426e-10,
+      "ibm_kingston": 2.2334725481427965e-15,
+      "ibm_marrakesh": 3.367206377846534e-13,
+      "ibm_pittsburgh": 1.3944603854199724e-13,
+      "ibm_torino": 0.003187718714325717
+    },
+    "ibm_fez": {
+      "ibm_boston": 3.2817338691702426e-10,
+      "ibm_fez": 0.0,
+      "ibm_kingston": 5.5702124959106844e-11,
+      "ibm_marrakesh": 7.045710445683154e-10,
+      "ibm_pittsburgh": 4.606210929918936e-14,
+      "ibm_torino": 1.13875451159644e-05
+    },
+    "ibm_kingston": {
+      "ibm_boston": 2.2334725481427965e-15,
+      "ibm_fez": 5.5702124959106844e-11,
+      "ibm_kingston": 0.0,
+      "ibm_marrakesh": 1.7648198986130188e-16,
+      "ibm_pittsburgh": 4.340067887986386e-18,
+      "ibm_torino": 0.000285591141030029
+    },
+    "ibm_marrakesh": {
+      "ibm_boston": 3.367206377846534e-13,
+      "ibm_fez": 7.045710445683154e-10,
+      "ibm_kingston": 1.7648198986130188e-16,
+      "ibm_marrakesh": 0.0,
+      "ibm_pittsburgh": 1.0419257716646045e-14,
+      "ibm_torino": 5.047375081480072e-05
+    },
+    "ibm_pittsburgh": {
+      "ibm_boston": 1.3944603854199724e-13,
+      "ibm_fez": 4.606210929918936e-14,
+      "ibm_kingston": 4.340067887986386e-18,
+      "ibm_marrakesh": 1.0419257716646045e-14,
+      "ibm_pittsburgh": 0.0,
+      "ibm_torino": 4.275250441766927e-05
+    },
+    "ibm_torino": {
+      "ibm_boston": 0.003187718714325717,
+      "ibm_fez": 1.13875451159644e-05,
+      "ibm_kingston": 0.000285591141030029,
+      "ibm_marrakesh": 5.047375081480072e-05,
+      "ibm_pittsburgh": 4.275250441766927e-05,
+      "ibm_torino": 0.0
+    }
+  },
+  "pairwise_tests": [
+    {
+      "pair": "ibm_boston vs ibm_fez",
+      "backend_a": "ibm_boston",
+      "backend_b": "ibm_fez",
+      "n_workloads": 28,
+      "rho": 0.886941,
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "significant": true,
+      "p_permutation_mc": 5e-05,
+      "p_permutation_bonferroni": 0.00074996,
+      "permutation_exceedances": 0,
+      "permutation_significant": true
+    },
+    {
+      "pair": "ibm_boston vs ibm_kingston",
+      "backend_a": "ibm_boston",
+      "backend_b": "ibm_kingston",
+      "n_workloads": 28,
+      "rho": 0.956096,
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "significant": true,
+      "p_permutation_mc": 5e-05,
+      "p_permutation_bonferroni": 0.00074996,
+      "permutation_exceedances": 0,
+      "permutation_significant": true
+    },
+    {
+      "pair": "ibm_boston vs ibm_marrakesh",
+      "backend_a": "ibm_boston",
+      "backend_b": "ibm_marrakesh",
+      "n_workloads": 28,
+      "rho": 0.934819,
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "significant": true,
+      "p_permutation_mc": 5e-05,
+      "p_permutation_bonferroni": 0.00074996,
+      "permutation_exceedances": 0,
+      "permutation_significant": true
+    },
+    {
+      "pair": "ibm_boston vs ibm_pittsburgh",
+      "backend_a": "ibm_boston",
+      "backend_b": "ibm_pittsburgh",
+      "n_workloads": 28,
+      "rho": 0.93921,
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "significant": true,
+      "p_permutation_mc": 5e-05,
+      "p_permutation_bonferroni": 0.00074996,
+      "permutation_exceedances": 0,
+      "permutation_significant": true
+    },
+    {
+      "pair": "ibm_boston vs ibm_torino",
+      "backend_a": "ibm_boston",
+      "backend_b": "ibm_torino",
+      "n_workloads": 28,
+      "rho": 0.537397,
+      "p_raw": 0.00318772,
+      "p_bonferroni": 0.04781578,
+      "significant": true,
+      "p_permutation_mc": 0.0040498,
+      "p_permutation_bonferroni": 0.06074696,
+      "permutation_exceedances": 80,
+      "permutation_significant": false
+    },
+    {
+      "pair": "ibm_fez vs ibm_kingston",
+      "backend_a": "ibm_fez",
+      "backend_b": "ibm_kingston",
+      "n_workloads": 28,
+      "rho": 0.902025,
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "significant": true,
+      "p_permutation_mc": 5e-05,
+      "p_permutation_bonferroni": 0.00074996,
+      "permutation_exceedances": 0,
+      "permutation_significant": true
+    },
+    {
+      "pair": "ibm_fez vs ibm_marrakesh",
+      "backend_a": "ibm_fez",
+      "backend_b": "ibm_marrakesh",
+      "n_workloads": 28,
+      "rho": 0.879704,
+      "p_raw": 0.0,
+      "p_bonferroni": 1e-08,
+      "significant": true,
+      "p_permutation_mc": 5e-05,
+      "p_permutation_bonferroni": 0.00074996,
+      "permutation_exceedances": 0,
+      "permutation_significant": true
+    },
+    {
+      "pair": "ibm_fez vs ibm_pittsburgh",
+      "backend_a": "ibm_fez",
+      "backend_b": "ibm_pittsburgh",
+      "n_workloads": 28,
+      "rho": 0.9443,
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "significant": true,
+      "p_permutation_mc": 5e-05,
+      "p_permutation_bonferroni": 0.00074996,
+      "permutation_exceedances": 0,
+      "permutation_significant": true
+    },
+    {
+      "pair": "ibm_fez vs ibm_torino",
+      "backend_a": "ibm_fez",
+      "backend_b": "ibm_torino",
+      "n_workloads": 28,
+      "rho": 0.727795,
+      "p_raw": 1.139e-05,
+      "p_bonferroni": 0.00017081,
+      "significant": true,
+      "p_permutation_mc": 5e-05,
+      "p_permutation_bonferroni": 0.00074996,
+      "permutation_exceedances": 0,
+      "permutation_significant": true
+    },
+    {
+      "pair": "ibm_kingston vs ibm_marrakesh",
+      "backend_a": "ibm_kingston",
+      "backend_b": "ibm_marrakesh",
+      "n_workloads": 28,
+      "rho": 0.964007,
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "significant": true,
+      "p_permutation_mc": 5e-05,
+      "p_permutation_bonferroni": 0.00074996,
+      "permutation_exceedances": 0,
+      "permutation_significant": true
+    },
+    {
+      "pair": "ibm_kingston vs ibm_pittsburgh",
+      "backend_a": "ibm_kingston",
+      "backend_b": "ibm_pittsburgh",
+      "n_workloads": 28,
+      "rho": 0.97304,
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "significant": true,
+      "p_permutation_mc": 5e-05,
+      "p_permutation_bonferroni": 0.00074996,
+      "permutation_exceedances": 0,
+      "permutation_significant": true
+    },
+    {
+      "pair": "ibm_kingston vs ibm_torino",
+      "backend_a": "ibm_kingston",
+      "backend_b": "ibm_torino",
+      "n_workloads": 28,
+      "rho": 0.634734,
+      "p_raw": 0.00028559,
+      "p_bonferroni": 0.00428387,
+      "significant": true,
+      "p_permutation_mc": 0.00044998,
+      "p_permutation_bonferroni": 0.00674966,
+      "permutation_exceedances": 8,
+      "permutation_significant": true
+    },
+    {
+      "pair": "ibm_marrakesh vs ibm_pittsburgh",
+      "backend_a": "ibm_marrakesh",
+      "backend_b": "ibm_pittsburgh",
+      "n_workloads": 28,
+      "rho": 0.950452,
+      "p_raw": 0.0,
+      "p_bonferroni": 0.0,
+      "significant": true,
+      "p_permutation_mc": 5e-05,
+      "p_permutation_bonferroni": 0.00074996,
+      "permutation_exceedances": 0,
+      "permutation_significant": true
+    },
+    {
+      "pair": "ibm_marrakesh vs ibm_torino",
+      "backend_a": "ibm_marrakesh",
+      "backend_b": "ibm_torino",
+      "n_workloads": 28,
+      "rho": 0.688886,
+      "p_raw": 5.047e-05,
+      "p_bonferroni": 0.00075711,
+      "significant": true,
+      "p_permutation_mc": 0.00014999,
+      "p_permutation_bonferroni": 0.00224989,
+      "permutation_exceedances": 2,
+      "permutation_significant": true
+    },
+    {
+      "pair": "ibm_pittsburgh vs ibm_torino",
+      "backend_a": "ibm_pittsburgh",
+      "backend_b": "ibm_torino",
+      "n_workloads": 28,
+      "rho": 0.69354,
+      "p_raw": 4.275e-05,
+      "p_bonferroni": 0.00064129,
+      "significant": true,
+      "p_permutation_mc": 0.00014999,
+      "p_permutation_bonferroni": 0.00224989,
+      "permutation_exceedances": 2,
+      "permutation_significant": true
+    }
+  ],
+  "bonferroni_n_comparisons": 15,
+  "bonferroni_threshold": 0.003333,
+  "mean_cross_backend_rho": 0.8409,
+  "permutation_sensitivity": {
+    "method": "deterministic Monte Carlo permutation test on average ranks; two-sided; add-one smoothing",
+    "n_permutations_per_pair": 20000,
+    "seed_base": 424242,
+    "significant_pairs_after_bonferroni": 14,
+    "total_pairs": 15,
+    "weakest_pair_by_permutation_bonferroni": {
+      "pair": "ibm_boston vs ibm_torino",
+      "rho": 0.537397,
+      "p_permutation_bonferroni": 0.06074696
+    }
+  },
+  "workload_metadata": [
+    {
+      "circuit_kind": "v11_ghz7",
+      "family": "ghz",
+      "num_qubits": 7,
+      "logical_depth": 7,
+      "metric_name": "ghz_parity"
+    },
+    {
+      "circuit_kind": "v11_grover2",
+      "family": "grover",
+      "num_qubits": 2,
+      "logical_depth": 7,
+      "metric_name": "grover_hit"
+    },
+    {
+      "circuit_kind": "v11_grover3",
+      "family": "grover",
+      "num_qubits": 3,
+      "logical_depth": 11,
+      "metric_name": "grover_hit"
+    },
+    {
+      "circuit_kind": "v11_mirror1q_d1",
+      "family": "mirror",
+      "num_qubits": 1,
+      "logical_depth": 6,
+      "metric_name": "mirror_P0"
+    },
+    {
+      "circuit_kind": "v11_mirror1q_d16",
+      "family": "mirror",
+      "num_qubits": 1,
+      "logical_depth": 96,
+      "metric_name": "mirror_P0"
+    },
+    {
+      "circuit_kind": "v11_mirror1q_d2",
+      "family": "mirror",
+      "num_qubits": 1,
+      "logical_depth": 12,
+      "metric_name": "mirror_P0"
+    },
+    {
+      "circuit_kind": "v11_mirror1q_d4",
+      "family": "mirror",
+      "num_qubits": 1,
+      "logical_depth": 24,
+      "metric_name": "mirror_P0"
+    },
+    {
+      "circuit_kind": "v11_mirror1q_d8",
+      "family": "mirror",
+      "num_qubits": 1,
+      "logical_depth": 48,
+      "metric_name": "mirror_P0"
+    },
+    {
+      "circuit_kind": "v11_qaoa_maxcut4",
+      "family": "qaoa",
+      "num_qubits": 4,
+      "logical_depth": 14,
+      "metric_name": "qaoa_approx_ratio"
+    },
+    {
+      "circuit_kind": "v11_qft4",
+      "family": "qft",
+      "num_qubits": 4,
+      "logical_depth": 7,
+      "metric_name": "qft_entropy_ratio"
+    },
+    {
+      "circuit_kind": "v11_qft5",
+      "family": "qft",
+      "num_qubits": 5,
+      "logical_depth": 9,
+      "metric_name": "qft_entropy_ratio"
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d16_s1337",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 30,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d16_s314159",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 29,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d16_s42",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 32,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d16_s7",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 31,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d8_s1337",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 16,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d8_s314159",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 14,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d8_s42",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 16,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d8_s7",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 16,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d16_s1337",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 28,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d16_s314159",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 28,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d16_s42",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 26,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d16_s7",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 28,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d8_s1337",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 15,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d8_s314159",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 16,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d8_s42",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 13,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d8_s7",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 15,
+      "metric_name": "rand_kl_quality"
+    },
+    {
+      "circuit_kind": "v11_vqe_h2",
+      "family": "vqe",
+      "num_qubits": 2,
+      "logical_depth": 6,
+      "metric_name": "vqe_sector_fidelity"
+    }
+  ],
+  "leave_one_family_out": {
+    "results": [
+      {
+        "excluded_family": "ghz",
+        "n_workload_kinds": 27,
+        "mean_rho": 0.836899,
+        "min_pair_rho": 0.504672,
+        "max_pair_rho": 0.969928,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.504672
+      },
+      {
+        "excluded_family": "grover",
+        "n_workload_kinds": 26,
+        "mean_rho": 0.846797,
+        "min_pair_rho": 0.539032,
+        "max_pair_rho": 0.98068,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.539032
+      },
+      {
+        "excluded_family": "mirror",
+        "n_workload_kinds": 23,
+        "mean_rho": 0.891765,
+        "min_pair_rho": 0.735178,
+        "max_pair_rho": 0.983202,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.735178
+      },
+      {
+        "excluded_family": "qaoa",
+        "n_workload_kinds": 27,
+        "mean_rho": 0.82248,
+        "min_pair_rho": 0.483848,
+        "max_pair_rho": 0.969928,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.483848
+      },
+      {
+        "excluded_family": "qft",
+        "n_workload_kinds": 26,
+        "mean_rho": 0.837332,
+        "min_pair_rho": 0.537659,
+        "max_pair_rho": 0.979313,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.537659
+      },
+      {
+        "excluded_family": "rand",
+        "n_workload_kinds": 12,
+        "mean_rho": 0.7722,
+        "min_pair_rho": 0.588372,
+        "max_pair_rho": 0.937036,
+        "weakest_pair": "ibm_boston vs ibm_marrakesh",
+        "weakest_pair_rho": 0.588372
+      },
+      {
+        "excluded_family": "vqe",
+        "n_workload_kinds": 27,
+        "mean_rho": 0.847886,
+        "min_pair_rho": 0.58858,
+        "max_pair_rho": 0.979184,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.58858
+      }
+    ],
+    "mean_rho_range": [
+      0.7722,
+      0.891765
+    ]
+  },
+  "leave_one_workload_out": {
+    "max_abs_delta_mean_rho": 0.021022,
+    "top_influential_workloads": [
+      {
+        "excluded_workload": "v11_grover2",
+        "mean_rho": 0.861885,
+        "delta_mean_rho": 0.021022,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.58858
+      },
+      {
+        "excluded_workload": "v11_qaoa_maxcut4",
+        "mean_rho": 0.82248,
+        "delta_mean_rho": -0.018383,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.483848
+      },
+      {
+        "excluded_workload": "v11_grover3",
+        "mean_rho": 0.823824,
+        "delta_mean_rho": -0.017039,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.483848
+      },
+      {
+        "excluded_workload": "v11_mirror1q_d4",
+        "mean_rho": 0.856798,
+        "delta_mean_rho": 0.015935,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.585232
+      },
+      {
+        "excluded_workload": "v11_rand_w6_d8_s314159",
+        "mean_rho": 0.825617,
+        "delta_mean_rho": -0.015246,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.487523
+      },
+      {
+        "excluded_workload": "v11_rand_w6_d8_s7",
+        "mean_rho": 0.825983,
+        "delta_mean_rho": -0.01488,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.489361
+      },
+      {
+        "excluded_workload": "v11_mirror1q_d1",
+        "mean_rho": 0.854246,
+        "delta_mean_rho": 0.013383,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.575666
+      },
+      {
+        "excluded_workload": "v11_mirror1q_d2",
+        "mean_rho": 0.853474,
+        "delta_mean_rho": 0.012611,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.575666
+      },
+      {
+        "excluded_workload": "v11_rand_w6_d8_s42",
+        "mean_rho": 0.830099,
+        "delta_mean_rho": -0.010764,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.508347
+      },
+      {
+        "excluded_workload": "v11_rand_w4_d16_s42",
+        "mean_rho": 0.830914,
+        "delta_mean_rho": -0.009949,
+        "weakest_pair": "ibm_boston vs ibm_torino",
+        "weakest_pair_rho": 0.50651
+      }
+    ]
+  },
+  "clustered_bootstrap": {
+    "description": "Family-clustered bootstrap over workload families with replacement",
+    "n_replicates": 5000,
+    "seed": 20260501,
+    "families": {
+      "ghz": 1,
+      "grover": 2,
+      "mirror": 5,
+      "qaoa": 1,
+      "qft": 2,
+      "rand": 16,
+      "vqe": 1
+    },
+    "mean_rho_observed": 0.840863,
+    "mean_rho_ci95_low": 0.441492,
+    "mean_rho_ci95_high": 0.957475,
+    "weakest_pair": {
+      "pair": "ibm_boston vs ibm_torino",
+      "rho_observed": 0.537397,
+      "ci95_low": 0.137226,
+      "ci95_high": 0.978468
+    },
+    "pairwise_ci95": [
+      {
+        "pair": "ibm_boston vs ibm_fez",
+        "rho_observed": 0.886941,
+        "ci95_low": 0.701646,
+        "ci95_high": 0.977454
+      },
+      {
+        "pair": "ibm_boston vs ibm_kingston",
+        "rho_observed": 0.956096,
+        "ci95_low": 0.678415,
+        "ci95_high": 0.990759
+      },
+      {
+        "pair": "ibm_boston vs ibm_marrakesh",
+        "rho_observed": 0.934819,
+        "ci95_low": 0.090226,
+        "ci95_high": 0.990314
+      },
+      {
+        "pair": "ibm_boston vs ibm_pittsburgh",
+        "rho_observed": 0.93921,
+        "ci95_low": 0.772482,
+        "ci95_high": 0.978602
+      },
+      {
+        "pair": "ibm_boston vs ibm_torino",
+        "rho_observed": 0.537397,
+        "ci95_low": 0.137226,
+        "ci95_high": 0.978468
+      },
+      {
+        "pair": "ibm_fez vs ibm_kingston",
+        "rho_observed": 0.902025,
+        "ci95_low": 0.371053,
+        "ci95_high": 0.990546
+      },
+      {
+        "pair": "ibm_fez vs ibm_marrakesh",
+        "rho_observed": 0.879704,
+        "ci95_low": 0.281052,
+        "ci95_high": 0.972603
+      },
+      {
+        "pair": "ibm_fez vs ibm_pittsburgh",
+        "rho_observed": 0.9443,
+        "ci95_low": 0.664035,
+        "ci95_high": 0.990521
+      },
+      {
+        "pair": "ibm_fez vs ibm_torino",
+        "rho_observed": 0.727795,
+        "ci95_low": 0.126207,
+        "ci95_high": 1.0
+      },
+      {
+        "pair": "ibm_kingston vs ibm_marrakesh",
+        "rho_observed": 0.964007,
+        "ci95_low": 0.27477,
+        "ci95_high": 0.991509
+      },
+      {
+        "pair": "ibm_kingston vs ibm_pittsburgh",
+        "rho_observed": 0.97304,
+        "ci95_low": 0.698335,
+        "ci95_high": 1.0
+      },
+      {
+        "pair": "ibm_kingston vs ibm_torino",
+        "rho_observed": 0.634734,
+        "ci95_low": 0.208958,
+        "ci95_high": 1.0
+      },
+      {
+        "pair": "ibm_marrakesh vs ibm_pittsburgh",
+        "rho_observed": 0.950452,
+        "ci95_low": 0.046672,
+        "ci95_high": 0.990137
+      },
+      {
+        "pair": "ibm_marrakesh vs ibm_torino",
+        "rho_observed": 0.688886,
+        "ci95_low": 0.453386,
+        "ci95_high": 0.957417
+      },
+      {
+        "pair": "ibm_pittsburgh vs ibm_torino",
+        "rho_observed": 0.69354,
+        "ci95_low": 0.019202,
+        "ci95_high": 1.0
+      }
+    ]
+  },
+  "residualized_rank_correlation": {
+    "design": {
+      "response": "within-backend average ranks of primary workload metrics",
+      "covariates": [
+        "num_qubits",
+        "logical_qasm_depth_ex_measurement",
+        "family dummies"
+      ],
+      "baseline_family": "mirror"
+    },
+    "correlation_matrix": {
+      "ibm_boston": {
+        "ibm_boston": 1.0,
+        "ibm_fez": 0.885,
+        "ibm_kingston": 0.968,
+        "ibm_marrakesh": 0.964,
+        "ibm_pittsburgh": 0.943,
+        "ibm_torino": 0.876
+      },
+      "ibm_fez": {
+        "ibm_boston": 0.885,
+        "ibm_fez": 1.0,
+        "ibm_kingston": 0.868,
+        "ibm_marrakesh": 0.899,
+        "ibm_pittsburgh": 0.936,
+        "ibm_torino": 0.958
+      },
+      "ibm_kingston": {
+        "ibm_boston": 0.968,
+        "ibm_fez": 0.868,
+        "ibm_kingston": 1.0,
+        "ibm_marrakesh": 0.949,
+        "ibm_pittsburgh": 0.957,
+        "ibm_torino": 0.853
+      },
+      "ibm_marrakesh": {
+        "ibm_boston": 0.964,
+        "ibm_fez": 0.899,
+        "ibm_kingston": 0.949,
+        "ibm_marrakesh": 1.0,
+        "ibm_pittsburgh": 0.955,
+        "ibm_torino": 0.883
+      },
+      "ibm_pittsburgh": {
+        "ibm_boston": 0.943,
+        "ibm_fez": 0.936,
+        "ibm_kingston": 0.957,
+        "ibm_marrakesh": 0.955,
+        "ibm_pittsburgh": 1.0,
+        "ibm_torino": 0.919
+      },
+      "ibm_torino": {
+        "ibm_boston": 0.876,
+        "ibm_fez": 0.958,
+        "ibm_kingston": 0.853,
+        "ibm_marrakesh": 0.883,
+        "ibm_pittsburgh": 0.919,
+        "ibm_torino": 1.0
+      }
+    },
+    "mean_rho": 0.920749,
+    "min_pair_rho": 0.852789,
+    "max_pair_rho": 0.967697,
+    "pairwise_tests": [
+      {
+        "pair": "ibm_boston vs ibm_fez",
+        "backend_a": "ibm_boston",
+        "backend_b": "ibm_fez",
+        "n_workloads": 28,
+        "rho": 0.885478,
+        "p_raw": 0.0
+      },
+      {
+        "pair": "ibm_boston vs ibm_kingston",
+        "backend_a": "ibm_boston",
+        "backend_b": "ibm_kingston",
+        "n_workloads": 28,
+        "rho": 0.967697,
+        "p_raw": 0.0
+      },
+      {
+        "pair": "ibm_boston vs ibm_marrakesh",
+        "backend_a": "ibm_boston",
+        "backend_b": "ibm_marrakesh",
+        "n_workloads": 28,
+        "rho": 0.963645,
+        "p_raw": 0.0
+      },
+      {
+        "pair": "ibm_boston vs ibm_pittsburgh",
+        "backend_a": "ibm_boston",
+        "backend_b": "ibm_pittsburgh",
+        "n_workloads": 28,
+        "rho": 0.943156,
+        "p_raw": 0.0
+      },
+      {
+        "pair": "ibm_boston vs ibm_torino",
+        "backend_a": "ibm_boston",
+        "backend_b": "ibm_torino",
+        "n_workloads": 28,
+        "rho": 0.875539,
+        "p_raw": 0.0
+      },
+      {
+        "pair": "ibm_fez vs ibm_kingston",
+        "backend_a": "ibm_fez",
+        "backend_b": "ibm_kingston",
+        "n_workloads": 28,
+        "rho": 0.867854,
+        "p_raw": 0.0
+      },
+      {
+        "pair": "ibm_fez vs ibm_marrakesh",
+        "backend_a": "ibm_fez",
+        "backend_b": "ibm_marrakesh",
+        "n_workloads": 28,
+        "rho": 0.899013,
+        "p_raw": 0.0
+      },
+      {
+        "pair": "ibm_fez vs ibm_pittsburgh",
+        "backend_a": "ibm_fez",
+        "backend_b": "ibm_pittsburgh",
+        "n_workloads": 28,
+        "rho": 0.935735,
+        "p_raw": 0.0
+      },
+      {
+        "pair": "ibm_fez vs ibm_torino",
+        "backend_a": "ibm_fez",
+        "backend_b": "ibm_torino",
+        "n_workloads": 28,
+        "rho": 0.957685,
+        "p_raw": 0.0
+      },
+      {
+        "pair": "ibm_kingston vs ibm_marrakesh",
+        "backend_a": "ibm_kingston",
+        "backend_b": "ibm_marrakesh",
+        "n_workloads": 28,
+        "rho": 0.948836,
+        "p_raw": 0.0
+      },
+      {
+        "pair": "ibm_kingston vs ibm_pittsburgh",
+        "backend_a": "ibm_kingston",
+        "backend_b": "ibm_pittsburgh",
+        "n_workloads": 28,
+        "rho": 0.957148,
+        "p_raw": 0.0
+      },
+      {
+        "pair": "ibm_kingston vs ibm_torino",
+        "backend_a": "ibm_kingston",
+        "backend_b": "ibm_torino",
+        "n_workloads": 28,
+        "rho": 0.852789,
+        "p_raw": 1e-08
+      },
+      {
+        "pair": "ibm_marrakesh vs ibm_pittsburgh",
+        "backend_a": "ibm_marrakesh",
+        "backend_b": "ibm_pittsburgh",
+        "n_workloads": 28,
+        "rho": 0.954691,
+        "p_raw": 0.0
+      },
+      {
+        "pair": "ibm_marrakesh vs ibm_torino",
+        "backend_a": "ibm_marrakesh",
+        "backend_b": "ibm_torino",
+        "n_workloads": 28,
+        "rho": 0.883256,
+        "p_raw": 0.0
+      },
+      {
+        "pair": "ibm_pittsburgh vs ibm_torino",
+        "backend_a": "ibm_pittsburgh",
+        "backend_b": "ibm_torino",
+        "n_workloads": 28,
+        "rho": 0.918708,
+        "p_raw": 0.0
+      }
+    ]
+  },
+  "workload_stats": [
+    {
+      "circuit_kind": "v11_ghz7",
+      "family": "ghz",
+      "num_qubits": 7,
+      "logical_depth": 7,
+      "mean": 0.7985,
+      "std": 0.1628,
+      "cv": 0.2038,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_grover2",
+      "family": "grover",
+      "num_qubits": 2,
+      "logical_depth": 7,
+      "mean": 0.9033,
+      "std": 0.087,
+      "cv": 0.0963,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_vqe_h2",
+      "family": "vqe",
+      "num_qubits": 2,
+      "logical_depth": 6,
+      "mean": 0.91,
+      "std": 0.0542,
+      "cv": 0.0596,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_grover3",
+      "family": "grover",
+      "num_qubits": 3,
+      "logical_depth": 11,
+      "mean": 0.6785,
+      "std": 0.03,
+      "cv": 0.0443,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d8_s314159",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 16,
+      "mean": 0.7705,
+      "std": 0.0321,
+      "cv": 0.0416,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_mirror1q_d4",
+      "family": "mirror",
+      "num_qubits": 1,
+      "logical_depth": 24,
+      "mean": 0.9821,
+      "std": 0.0371,
+      "cv": 0.0377,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_mirror1q_d1",
+      "family": "mirror",
+      "num_qubits": 1,
+      "logical_depth": 6,
+      "mean": 0.9823,
+      "std": 0.036,
+      "cv": 0.0366,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_mirror1q_d2",
+      "family": "mirror",
+      "num_qubits": 1,
+      "logical_depth": 12,
+      "mean": 0.9817,
+      "std": 0.0357,
+      "cv": 0.0364,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_mirror1q_d8",
+      "family": "mirror",
+      "num_qubits": 1,
+      "logical_depth": 48,
+      "mean": 0.9828,
+      "std": 0.0338,
+      "cv": 0.0344,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_mirror1q_d16",
+      "family": "mirror",
+      "num_qubits": 1,
+      "logical_depth": 96,
+      "mean": 0.9833,
+      "std": 0.0312,
+      "cv": 0.0318,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_qaoa_maxcut4",
+      "family": "qaoa",
+      "num_qubits": 4,
+      "logical_depth": 14,
+      "mean": 0.3499,
+      "std": 0.0105,
+      "cv": 0.0301,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d16_s42",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 32,
+      "mean": 0.8484,
+      "std": 0.0235,
+      "cv": 0.0277,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d8_s42",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 13,
+      "mean": 0.7888,
+      "std": 0.0197,
+      "cv": 0.025,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d16_s7",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 31,
+      "mean": 0.8983,
+      "std": 0.0162,
+      "cv": 0.018,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d16_s1337",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 30,
+      "mean": 0.8746,
+      "std": 0.0154,
+      "cv": 0.0176,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d16_s1337",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 28,
+      "mean": 0.8881,
+      "std": 0.0137,
+      "cv": 0.0155,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d8_s7",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 15,
+      "mean": 0.7857,
+      "std": 0.0102,
+      "cv": 0.0129,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d16_s314159",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 29,
+      "mean": 0.9393,
+      "std": 0.0103,
+      "cv": 0.0109,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d8_s7",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 16,
+      "mean": 0.915,
+      "std": 0.0097,
+      "cv": 0.0106,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d16_s7",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 28,
+      "mean": 0.9586,
+      "std": 0.0093,
+      "cv": 0.0096,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d8_s1337",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 15,
+      "mean": 0.9358,
+      "std": 0.0087,
+      "cv": 0.0093,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_qft5",
+      "family": "qft",
+      "num_qubits": 5,
+      "logical_depth": 9,
+      "mean": 0.9889,
+      "std": 0.0081,
+      "cv": 0.0081,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d16_s314159",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 28,
+      "mean": 0.9444,
+      "std": 0.0072,
+      "cv": 0.0077,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d8_s314159",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 14,
+      "mean": 0.9112,
+      "std": 0.0066,
+      "cv": 0.0072,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w6_d16_s42",
+      "family": "rand",
+      "num_qubits": 6,
+      "logical_depth": 26,
+      "mean": 0.934,
+      "std": 0.006,
+      "cv": 0.0064,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d8_s1337",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 16,
+      "mean": 0.9564,
+      "std": 0.0046,
+      "cv": 0.0048,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_qft4",
+      "family": "qft",
+      "num_qubits": 4,
+      "logical_depth": 7,
+      "mean": 0.9951,
+      "std": 0.0023,
+      "cv": 0.0023,
+      "n_backends": 6
+    },
+    {
+      "circuit_kind": "v11_rand_w4_d8_s42",
+      "family": "rand",
+      "num_qubits": 4,
+      "logical_depth": 16,
+      "mean": 0.9976,
+      "std": 0.0011,
+      "cv": 0.0011,
+      "n_backends": 6
+    }
+  ]
+}

@@ -1,0 +1,375 @@
+{
+  "backends": [
+    "ibm_boston",
+    "ibm_fez",
+    "ibm_kingston",
+    "ibm_marrakesh",
+    "ibm_pittsburgh",
+    "ibm_torino"
+  ],
+  "by_backend": {
+    "ibm_boston": {
+      "binding_verified": 26,
+      "families": {
+        "ghz": 1,
+        "grover": 2,
+        "mirror_1q_depth": 5,
+        "qft": 2,
+        "rand": 16
+      },
+      "offline_prob": 26,
+      "result_fetched": 26,
+      "runs": 26
+    },
+    "ibm_fez": {
+      "binding_verified": 26,
+      "families": {
+        "ghz": 1,
+        "grover": 2,
+        "mirror_1q_depth": 5,
+        "qft": 2,
+        "rand": 16
+      },
+      "offline_prob": 26,
+      "result_fetched": 26,
+      "runs": 26
+    },
+    "ibm_kingston": {
+      "binding_verified": 26,
+      "families": {
+        "ghz": 1,
+        "grover": 2,
+        "mirror_1q_depth": 5,
+        "qft": 2,
+        "rand": 16
+      },
+      "offline_prob": 26,
+      "result_fetched": 26,
+      "runs": 26
+    },
+    "ibm_marrakesh": {
+      "binding_verified": 26,
+      "families": {
+        "ghz": 1,
+        "grover": 2,
+        "mirror_1q_depth": 5,
+        "qft": 2,
+        "rand": 16
+      },
+      "offline_prob": 26,
+      "result_fetched": 26,
+      "runs": 26
+    },
+    "ibm_pittsburgh": {
+      "binding_verified": 26,
+      "families": {
+        "ghz": 1,
+        "grover": 2,
+        "mirror_1q_depth": 5,
+        "qft": 2,
+        "rand": 16
+      },
+      "offline_prob": 26,
+      "result_fetched": 26,
+      "runs": 26
+    },
+    "ibm_torino": {
+      "binding_verified": 26,
+      "families": {
+        "ghz": 1,
+        "grover": 2,
+        "mirror_1q_depth": 5,
+        "qft": 2,
+        "rand": 16
+      },
+      "offline_prob": 26,
+      "result_fetched": 26,
+      "runs": 26
+    }
+  },
+  "campaign": "v1.1_stageS1_2048",
+  "counts": {
+    "total_runs": 156,
+    "with_binding_verified": 156,
+    "with_offline_prob": 156,
+    "with_result_fetched": 156
+  },
+  "date_utc": "2026-02-01",
+  "kind": "v1_1_stageS1_summary_v1",
+  "metrics": {
+    "ghz7": {
+      "ibm_boston": 0.89306640625,
+      "ibm_fez": 0.50439453125,
+      "ibm_kingston": 0.896484375,
+      "ibm_marrakesh": 0.912109375,
+      "ibm_pittsburgh": 0.87744140625,
+      "ibm_torino": 0.70751953125
+    },
+    "grover": {
+      "ibm_boston": {
+        "v11_grover2": 0.984375,
+        "v11_grover3": 0.662109375
+      },
+      "ibm_fez": {
+        "v11_grover2": 0.79541015625,
+        "v11_grover3": 0.66162109375
+      },
+      "ibm_kingston": {
+        "v11_grover2": 0.96923828125,
+        "v11_grover3": 0.68408203125
+      },
+      "ibm_marrakesh": {
+        "v11_grover2": 0.96044921875,
+        "v11_grover3": 0.69140625
+      },
+      "ibm_pittsburgh": {
+        "v11_grover2": 0.916015625,
+        "v11_grover3": 0.728515625
+      },
+      "ibm_torino": {
+        "v11_grover2": 0.79443359375,
+        "v11_grover3": 0.64306640625
+      }
+    },
+    "mirror": {
+      "ibm_boston": {
+        "1": 1.0,
+        "16": 1.0,
+        "2": 1.0,
+        "4": 1.0,
+        "8": 1.0
+      },
+      "ibm_fez": {
+        "1": 0.9990234375,
+        "16": 0.9970703125,
+        "2": 0.99951171875,
+        "4": 0.99755859375,
+        "8": 0.99853515625
+      },
+      "ibm_kingston": {
+        "1": 0.998046875,
+        "16": 0.99658203125,
+        "2": 0.9931640625,
+        "4": 0.99853515625,
+        "8": 0.99560546875
+      },
+      "ibm_marrakesh": {
+        "1": 0.9912109375,
+        "16": 0.98974609375,
+        "2": 0.99072265625,
+        "4": 0.99072265625,
+        "8": 0.99267578125
+      },
+      "ibm_pittsburgh": {
+        "1": 0.99658203125,
+        "16": 0.99658203125,
+        "2": 0.99755859375,
+        "4": 0.9990234375,
+        "8": 0.99609375
+      },
+      "ibm_torino": {
+        "1": 0.9091796875,
+        "16": 0.919921875,
+        "2": 0.9091796875,
+        "4": 0.90673828125,
+        "8": 0.9140625
+      }
+    },
+    "qft": {
+      "ibm_boston": {
+        "v11_qft4": {
+          "collision": 0.06358861923217773,
+          "entropy_bits": 3.9877742633176494
+        },
+        "v11_qft5": {
+          "collision": 0.03519296646118164,
+          "entropy_bits": 4.907360233371408
+        }
+      },
+      "ibm_fez": {
+        "v11_qft4": {
+          "collision": 0.06464195251464844,
+          "entropy_bits": 3.973049788061388
+        },
+        "v11_qft5": {
+          "collision": 0.03662919998168945,
+          "entropy_bits": 4.883066244127375
+        }
+      },
+      "ibm_kingston": {
+        "v11_qft4": {
+          "collision": 0.06349372863769531,
+          "entropy_bits": 3.9886375288057963
+        },
+        "v11_qft5": {
+          "collision": 0.03281211853027344,
+          "entropy_bits": 4.96313996770132
+        }
+      },
+      "ibm_marrakesh": {
+        "v11_qft4": {
+          "collision": 0.06396865844726562,
+          "entropy_bits": 3.9830779588301737
+        },
+        "v11_qft5": {
+          "collision": 0.0318603515625,
+          "entropy_bits": 4.986296200326808
+        }
+      },
+      "ibm_pittsburgh": {
+        "v11_qft4": {
+          "collision": 0.06389617919921875,
+          "entropy_bits": 3.984120399506053
+        },
+        "v11_qft5": {
+          "collision": 0.03242015838623047,
+          "entropy_bits": 4.972180696804834
+        }
+      },
+      "ibm_torino": {
+        "v11_qft4": {
+          "collision": 0.06531286239624023,
+          "entropy_bits": 3.9656801951322036
+        },
+        "v11_qft5": {
+          "collision": 0.0331883430480957,
+          "entropy_bits": 4.954078444229411
+        }
+      }
+    },
+    "rand": {
+      "ibm_boston": {
+        "w4_d16": {
+          "collision_mean": 0.10912883281707764,
+          "entropy_bits_mean": 3.507983625825787,
+          "n": 4
+        },
+        "w4_d8": {
+          "collision_mean": 0.08106565475463867,
+          "entropy_bits_mean": 3.7650888430041256,
+          "n": 4
+        },
+        "w6_d16": {
+          "collision_mean": 0.026776790618896484,
+          "entropy_bits_mean": 5.555135055077259,
+          "n": 4
+        },
+        "w6_d8": {
+          "collision_mean": 0.04954254627227783,
+          "entropy_bits_mean": 4.837180027128011,
+          "n": 4
+        }
+      },
+      "ibm_fez": {
+        "w4_d16": {
+          "collision_mean": 0.09874475002288818,
+          "entropy_bits_mean": 3.615254734715763,
+          "n": 4
+        },
+        "w4_d8": {
+          "collision_mean": 0.07956671714782715,
+          "entropy_bits_mean": 3.787066225879641,
+          "n": 4
+        },
+        "w6_d16": {
+          "collision_mean": 0.025599241256713867,
+          "entropy_bits_mean": 5.595752044043058,
+          "n": 4
+        },
+        "w6_d8": {
+          "collision_mean": 0.04707622528076172,
+          "entropy_bits_mean": 4.9681390875190194,
+          "n": 4
+        }
+      },
+      "ibm_kingston": {
+        "w4_d16": {
+          "collision_mean": 0.10270953178405762,
+          "entropy_bits_mean": 3.5646129831840705,
+          "n": 4
+        },
+        "w4_d8": {
+          "collision_mean": 0.08001816272735596,
+          "entropy_bits_mean": 3.7803917846751904,
+          "n": 4
+        },
+        "w6_d16": {
+          "collision_mean": 0.02551579475402832,
+          "entropy_bits_mean": 5.583912224585642,
+          "n": 4
+        },
+        "w6_d8": {
+          "collision_mean": 0.04918408393859863,
+          "entropy_bits_mean": 4.9385425271233885,
+          "n": 4
+        }
+      },
+      "ibm_marrakesh": {
+        "w4_d16": {
+          "collision_mean": 0.1012732982635498,
+          "entropy_bits_mean": 3.587368343859195,
+          "n": 4
+        },
+        "w4_d8": {
+          "collision_mean": 0.07913005352020264,
+          "entropy_bits_mean": 3.7888063409130273,
+          "n": 4
+        },
+        "w6_d16": {
+          "collision_mean": 0.02508723735809326,
+          "entropy_bits_mean": 5.610431309730553,
+          "n": 4
+        },
+        "w6_d8": {
+          "collision_mean": 0.047841429710388184,
+          "entropy_bits_mean": 4.908299930451967,
+          "n": 4
+        }
+      },
+      "ibm_pittsburgh": {
+        "w4_d16": {
+          "collision_mean": 0.11131799221038818,
+          "entropy_bits_mean": 3.479095695014219,
+          "n": 4
+        },
+        "w4_d8": {
+          "collision_mean": 0.08080863952636719,
+          "entropy_bits_mean": 3.7684932869741465,
+          "n": 4
+        },
+        "w6_d16": {
+          "collision_mean": 0.027003169059753418,
+          "entropy_bits_mean": 5.532971226387797,
+          "n": 4
+        },
+        "w6_d8": {
+          "collision_mean": 0.04983484745025635,
+          "entropy_bits_mean": 4.855976299654175,
+          "n": 4
+        }
+      },
+      "ibm_torino": {
+        "w4_d16": {
+          "collision_mean": 0.09787750244140625,
+          "entropy_bits_mean": 3.6096959327163862,
+          "n": 4
+        },
+        "w4_d8": {
+          "collision_mean": 0.0793992280960083,
+          "entropy_bits_mean": 3.790954359197046,
+          "n": 4
+        },
+        "w6_d16": {
+          "collision_mean": 0.024120330810546875,
+          "entropy_bits_mean": 5.647484878068395,
+          "n": 4
+        },
+        "w6_d8": {
+          "collision_mean": 0.044756174087524414,
+          "entropy_bits_mean": 5.019396386376398,
+          "n": 4
+        }
+      }
+    }
+  }
+}

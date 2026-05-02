@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this evidence capsule, cite the Zenodo release DOI for this archive."
+title: "An Evidence-First Reproducibility Capsule for NISQ Benchmarking"
+authors:
+  - family-names: "Erlwein"
+    given-names: "Noah"
+    orcid: "https://orcid.org/0009-0008-7142-5475"
+    affiliation: "Invariant Systems"
+version: "v2026.05.01-zenodo"
+date-released: "2026-05-01"
+doi: "10.5281/zenodo.19954164"
+url: "https://doi.org/10.5281/zenodo.19954164"
+license: "CC-BY-4.0"
+abstract: "A reviewer-auditable evidence capsule for NISQ benchmarking, demonstrated on an IBM-only corpus with an author-preserved evaluation plan, content-addressed logical OpenQASM workload identity, provider job-id provenance, negative controls, public ancillary data, replay scripts, and cross-backend analysis."
+keywords:
+  - "NISQ"
+  - "quantum benchmarking"
+  - "reproducibility"
+  - "declared evaluation plan"
+  - "OpenQASM"
+  - "provenance"
+  - "IBM Quantum"

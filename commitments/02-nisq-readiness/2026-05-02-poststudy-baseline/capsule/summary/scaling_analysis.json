@@ -1,0 +1,114 @@
+{
+  "description": "GHZ parity scaling analysis: P_parity(n) = A*(1-2p)^n",
+  "model": "Exponential decay with per-qubit depolarizing error rate p",
+  "results": [
+    {
+      "backend": "ibm_boston",
+      "data_points": [
+        {
+          "n": 1,
+          "P_parity": 1.0
+        },
+        {
+          "n": 7,
+          "P_parity": 0.8931
+        }
+      ],
+      "fit_A": 1.019028,
+      "fit_r": 0.981327,
+      "effective_error_rate_p": 0.009336,
+      "P_predicted_n7": 0.893066,
+      "P_observed_n7": 0.893066
+    },
+    {
+      "backend": "ibm_fez",
+      "data_points": [
+        {
+          "n": 1,
+          "P_parity": 0.9983
+        },
+        {
+          "n": 7,
+          "P_parity": 0.5044
+        }
+      ],
+      "fit_A": 1.118656,
+      "fit_r": 0.892446,
+      "effective_error_rate_p": 0.053777,
+      "P_predicted_n7": 0.504395,
+      "P_observed_n7": 0.504395
+    },
+    {
+      "backend": "ibm_kingston",
+      "data_points": [
+        {
+          "n": 1,
+          "P_parity": 0.9964
+        },
+        {
+          "n": 7,
+          "P_parity": 0.8965
+        }
+      ],
+      "fit_A": 1.014088,
+      "fit_r": 0.982545,
+      "effective_error_rate_p": 0.008727,
+      "P_predicted_n7": 0.896484,
+      "P_observed_n7": 0.896484
+    },
+    {
+      "backend": "ibm_marrakesh",
+      "data_points": [
+        {
+          "n": 1,
+          "P_parity": 0.991
+        },
+        {
+          "n": 7,
+          "P_parity": 0.9222
+        }
+      ],
+      "fit_A": 1.002981,
+      "fit_r": 0.98807,
+      "effective_error_rate_p": 0.005965,
+      "P_predicted_n7": 0.92216,
+      "P_observed_n7": 0.92216
+    },
+    {
+      "backend": "ibm_pittsburgh",
+      "data_points": [
+        {
+          "n": 1,
+          "P_parity": 0.9972
+        },
+        {
+          "n": 7,
+          "P_parity": 0.8815
+        }
+      ],
+      "fit_A": 1.017869,
+      "fit_r": 0.979663,
+      "effective_error_rate_p": 0.010169,
+      "P_predicted_n7": 0.88151,
+      "P_observed_n7": 0.88151
+    },
+    {
+      "backend": "ibm_torino",
+      "data_points": [
+        {
+          "n": 1,
+          "P_parity": 0.9118
+        },
+        {
+          "n": 7,
+          "P_parity": 0.7075
+        }
+      ],
+      "fit_A": 0.951194,
+      "fit_r": 0.958602,
+      "effective_error_rate_p": 0.020699,
+      "P_predicted_n7": 0.70752,
+      "P_observed_n7": 0.70752
+    }
+  ]
+}

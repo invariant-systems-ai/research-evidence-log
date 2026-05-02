@@ -1,8 +1,8 @@
 {
   "schema": "invariant-systems/public_plan_commitment.v1",
   "commitment_id": "02-nisq-readiness-2026-05-02-poststudy-baseline",
-  "commitment_timestamp_utc": "2026-05-02T09:38:19Z",
-  "repository_url": "https://github.com/invariant-systems-ai/public-plan-commitments",
+  "commitment_timestamp_utc": "2026-05-02T09:52:21Z",
+  "repository_url": "https://github.com/invariant-systems-ai/evidence-commitments",
   "campaign": {
     "program_id": "02-nisq-readiness",
     "title": "An Evidence-First Reproducibility Capsule for NISQ Benchmarking",
@@ -31,29 +31,85 @@
     "record_url": "https://zenodo.org/records/19960217",
     "version_doi": "10.5281/zenodo.19960217",
     "concept_doi": "10.5281/zenodo.19954163",
-    "published_tarball_sha256": "72cdda950ea4878b0673c3bc424de6fff5e864d99e4af5b9e8bdffca87b41462"
+    "published_tarball_sha256": "e5511fbf5cafbe9fce809f9b9820d27027852430e4e8f1feee6bfaad2b219d67"
   },
   "artifacts": [
     {
       "role": "author_declared_evaluation_plan",
       "public_copy": "source/PREREGISTRATION_PUBLIC.json",
       "source_repo_path": "3-proof/3p-deliverable/publications/arxiv/02-nisq-readiness/anc/PREREGISTRATION_PUBLIC.json",
-      "sha256": "708c7194ad2402d1b8fa0dd9f0a947fd5468673cb08e9eb89c753846a7a2b567"
+      "sha256": "b4114a0ea524204bb08c36759a58c5b3448a06d7a21507a1b67c2d2e8a3ba870"
     },
     {
       "role": "timestamp_boundary_note",
       "public_copy": "source/24_EXECUTION_ORDER_AND_TIMESTAMP_POSTURE_20260501.md",
       "source_repo_path": "3-proof/3p-deliverable/publications/arxiv/02-nisq-readiness/anc/24_EXECUTION_ORDER_AND_TIMESTAMP_POSTURE_20260501.md",
-      "sha256": "fc0ccb556b1c28745ee7748db172542ae62774abfec3e646cc1a9b2c4f2d6b1b"
+      "sha256": "1f1c95a54fc2a17ae1ad8b05bd3a1b777488657c62a83d793922d62428dc0363"
     },
     {
       "role": "zenodo_tarball_checksum_sidecar",
       "public_copy": "source/nisq-readiness-evidence-capsule-v2026.05.01-zenodo.tar.gz.sha256",
       "source_repo_path": "3-proof/3p-deliverable/publications/arxiv/02-nisq-readiness/nisq-readiness-evidence-capsule-v2026.05.01-zenodo.tar.gz.sha256",
-      "sha256": "154b0348295bbcc5ceaf47cd4b18660d29ec55474cf8e92e2c9daeb659045189",
-      "declared_tarball_sha256": "72cdda950ea4878b0673c3bc424de6fff5e864d99e4af5b9e8bdffca87b41462"
+      "sha256": "869af33a43d459708cacf149a7e624487746c9137c36889ae21021b465cba279",
+      "declared_tarball_sha256": "e5511fbf5cafbe9fce809f9b9820d27027852430e4e8f1feee6bfaad2b219d67"
     }
   ],
+  "paper_reference_capsule": {
+    "mirror_path": "capsule",
+    "source_repo_path": "3-proof/3p-deliverable/publications/arxiv/02-nisq-readiness",
+    "allowlist_path": "capsule/PUBLIC_ARCHIVE_FILESET.txt",
+    "checksum_manifest_path": "capsule/checksums.sha256",
+    "checksum_validation": "passed",
+    "file_count": 82,
+    "ancillary_file_count": 55,
+    "summary_file_count": 5,
+    "note": "This is a verbatim mirror of the published public release allowlist intended as the primary paper-referenceable sidecar capsule."
+  },
+  "aiir": {
+    "bundle_manifest": "aiir/BUNDLESET.json",
+    "hash_manifest": "aiir/SHA256SUMS",
+    "paper_reference_bundle_subject": "nisq-public-evidence-capsule-mirror",
+    "generator": {
+      "tool": "AIIR",
+      "version": "1.5.1",
+      "receipt_schema": "aiir/commitment_receipt.v1",
+      "source_repository_url": "https://github.com/invariant-systems-ai/aiir",
+      "source_ref": "feat/commitment-receipts",
+      "source_commit": "2d20f37a259d515cf4877a0abf998753ce3c0621"
+    },
+    "verification": {
+      "local_json_and_cbor_verification": "passed",
+      "published_checksum_validation": "capsule/checksums.sha256 passed",
+      "sigstore_bundle_status": "present_for_all_receipts",
+      "external_transparency_log_status": "rekor_recorded_for_all_receipts",
+      "signature_verification": {
+        "status": "passed",
+        "policy": "identity",
+        "expected_identity": "noah@invariantsystems.io",
+        "expected_issuer": "https://accounts.google.com"
+      }
+    },
+    "bundle_ids": [
+      "public-capsule-mirror",
+      "poststudy-public-packet",
+      "zenodo-release-digest"
+    ],
+    "note": "Exact receipt ids, filenames, per-artifact hashes, and Rekor entry details are recorded in aiir/BUNDLESET.json. This packet-bound manifest intentionally avoids duplicating receipt-specific coordinates so the AIIR lane stays authoritative without forcing the packet receipt to chase its own hash.",
+    "claim_boundary": {
+      "supports": [
+        "tamper-evident integrity for the full copied paper-facing public capsule mirror in `capsule/`",
+        "tamper-evident integrity for the copied sidecar packet files in this repository",
+        "tamper-evident direct digest binding for the published Zenodo tarball hash",
+        "identity-pinned Sigstore signing for the AIIR receipt set under `noah@invariantsystems.io` via `https://accounts.google.com`",
+        "Rekor-backed public transparency-log timestamps for the AIIR receipt set"
+      ],
+      "does_not_support": [
+        "independent preregistration of the current NISQ study",
+        "a witness-quorum or multi-log transparency proof beyond the included Sigstore bundle and Rekor entry material",
+        "claims about unpublished or excluded evidence surfaces outside the copied `capsule/`, `source/`, and declared Zenodo digest"
+      ]
+    }
+  },
   "future_policy": {
     "day_zero_commit_required": true,
     "transparency_logs": [

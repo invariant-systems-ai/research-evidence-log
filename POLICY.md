@@ -7,6 +7,7 @@ This repository is a public chronology and hash-commitment surface.
 It is used to publish:
 - author-declared evaluation plans that are safe to disclose publicly
 - hashes of released evidence packages
+- AIIR commitment receipts and related sidecars for those public surfaces
 - later links to external transparency-log entries
 
 It is not used to claim:
@@ -19,8 +20,10 @@ It is not used to claim:
 1. History is append-only. Do not force-push or rewrite prior commitment commits.
 2. Each campaign gets a dated directory under `commitments/`.
 3. Each commitment directory should contain a machine-readable manifest, a short human-readable note, and any public source surfaces copied verbatim.
-4. If an external transparency log is used, record the entry ID, verification command, and date in the same campaign directory.
-5. If a commitment is post-study, say so explicitly.
+4. If AIIR receipts are included, store them in a sibling `aiir/` directory and record the generator ref or commit and current signing status.
+5. Copied public source surfaces should stay verbatim. Repo-boundary commentary, later chronology notes, and receipt artifacts belong alongside those copies, not inside them.
+6. If an external transparency log is used, record the entry ID, verification command, and date in the same campaign directory.
+7. If a commitment is post-study, say so explicitly.
 
 ## NISQ Boundary
 

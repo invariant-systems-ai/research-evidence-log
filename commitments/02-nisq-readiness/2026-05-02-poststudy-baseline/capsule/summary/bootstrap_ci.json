@@ -1,0 +1,601 @@
+{
+  "description": "Bootstrap CI comparison against IID approximation",
+  "n_bootstrap": 10000,
+  "mean_ratio_boot_to_iid": 0.9969,
+  "results": [
+    {
+      "run": 1,
+      "backend": "ibm_boston",
+      "job_id": "d5vltcd7fc0s73au5ub0",
+      "shots": 8192,
+      "S": 2.78418,
+      "iid_ci95": [
+        2.753093,
+        2.815267
+      ],
+      "bootstrap_ci95": [
+        2.753168,
+        2.814941
+      ],
+      "iid_width": 0.062174,
+      "bootstrap_width": 0.061774,
+      "ratio_boot_to_iid": 0.9936
+    },
+    {
+      "run": 2,
+      "backend": "ibm_boston",
+      "job_id": "d5vlte3uf71s73ciqjlg",
+      "shots": 8192,
+      "S": 2.789062,
+      "iid_ci95": [
+        2.75802,
+        2.820105
+      ],
+      "bootstrap_ci95": [
+        2.757812,
+        2.819586
+      ],
+      "iid_width": 0.062085,
+      "bootstrap_width": 0.061774,
+      "ratio_boot_to_iid": 0.995
+    },
+    {
+      "run": 3,
+      "backend": "ibm_boston",
+      "job_id": "d5vm0gjuf71s73ciqn30",
+      "shots": 16384,
+      "S": 2.780762,
+      "iid_ci95": [
+        2.758748,
+        2.802776
+      ],
+      "bootstrap_ci95": [
+        2.758789,
+        2.802246
+      ],
+      "iid_width": 0.044028,
+      "bootstrap_width": 0.043457,
+      "ratio_boot_to_iid": 0.987
+    },
+    {
+      "run": 4,
+      "backend": "ibm_boston",
+      "job_id": "d5vm53qbju6s73bc10fg",
+      "shots": 8192,
+      "S": 2.753662,
+      "iid_ci95": [
+        2.722252,
+        2.785072
+      ],
+      "bootstrap_ci95": [
+        2.722412,
+        2.785156
+      ],
+      "iid_width": 0.062819,
+      "bootstrap_width": 0.062744,
+      "ratio_boot_to_iid": 0.9988
+    },
+    {
+      "run": 5,
+      "backend": "ibm_boston",
+      "job_id": "d64vsnbtraac73bj1gk0",
+      "shots": 8192,
+      "S": 2.771729,
+      "iid_ci95": [
+        2.74051,
+        2.802947
+      ],
+      "bootstrap_ci95": [
+        2.740479,
+        2.802246
+      ],
+      "iid_width": 0.062438,
+      "bootstrap_width": 0.061768,
+      "ratio_boot_to_iid": 0.9893
+    },
+    {
+      "run": 6,
+      "backend": "ibm_boston",
+      "job_id": "d64vsnrtraac73bj1glg",
+      "shots": 8192,
+      "S": 2.796631,
+      "iid_ci95": [
+        2.765667,
+        2.827595
+      ],
+      "bootstrap_ci95": [
+        2.765381,
+        2.827637
+      ],
+      "iid_width": 0.061928,
+      "bootstrap_width": 0.062256,
+      "ratio_boot_to_iid": 1.0053
+    },
+    {
+      "run": 7,
+      "backend": "ibm_boston",
+      "job_id": "d64vsoao8gvs73f53cig",
+      "shots": 8192,
+      "S": 2.795898,
+      "iid_ci95": [
+        2.764932,
+        2.826865
+      ],
+      "bootstrap_ci95": [
+        2.765137,
+        2.826172
+      ],
+      "iid_width": 0.061933,
+      "bootstrap_width": 0.061035,
+      "ratio_boot_to_iid": 0.9855
+    },
+    {
+      "run": 8,
+      "backend": "ibm_boston",
+      "job_id": "d64vsojc4tus73fge28g",
+      "shots": 8192,
+      "S": 1.364258,
+      "iid_ci95": [
+        1.326343,
+        1.402172
+      ],
+      "bootstrap_ci95": [
+        1.325928,
+        1.4021
+      ],
+      "iid_width": 0.075829,
+      "bootstrap_width": 0.076172,
+      "ratio_boot_to_iid": 1.0045
+    },
+    {
+      "run": 9,
+      "backend": "ibm_fez",
+      "job_id": "d64vspns6ggc73fjmrrg",
+      "shots": 8192,
+      "S": 2.452148,
+      "iid_ci95": [
+        2.417946,
+        2.486351
+      ],
+      "bootstrap_ci95": [
+        2.417725,
+        2.486084
+      ],
+      "iid_width": 0.068405,
+      "bootstrap_width": 0.068359,
+      "ratio_boot_to_iid": 0.9993
+    },
+    {
+      "run": 10,
+      "backend": "ibm_fez",
+      "job_id": "d64vsq3traac73bj1gpg",
+      "shots": 8192,
+      "S": 2.373535,
+      "iid_ci95": [
+        2.338694,
+        2.408376
+      ],
+      "bootstrap_ci95": [
+        2.338867,
+        2.408203
+      ],
+      "iid_width": 0.069682,
+      "bootstrap_width": 0.069336,
+      "ratio_boot_to_iid": 0.995
+    },
+    {
+      "run": 11,
+      "backend": "ibm_fez",
+      "job_id": "d64vsqjtraac73bj1gr0",
+      "shots": 8192,
+      "S": 2.405029,
+      "iid_ci95": [
+        2.37044,
+        2.439619
+      ],
+      "bootstrap_ci95": [
+        2.370605,
+        2.440186
+      ],
+      "iid_width": 0.06918,
+      "bootstrap_width": 0.06958,
+      "ratio_boot_to_iid": 1.0058
+    },
+    {
+      "run": 12,
+      "backend": "ibm_fez",
+      "job_id": "d64vsr3c4tus73fge2d0",
+      "shots": 8192,
+      "S": 1.312744,
+      "iid_ci95": [
+        1.274443,
+        1.351045
+      ],
+      "bootstrap_ci95": [
+        1.273926,
+        1.35083
+      ],
+      "iid_width": 0.076602,
+      "bootstrap_width": 0.076904,
+      "ratio_boot_to_iid": 1.004
+    },
+    {
+      "run": 13,
+      "backend": "ibm_kingston",
+      "job_id": "d64vsrbc4tus73fge2eg",
+      "shots": 8192,
+      "S": 2.683105,
+      "iid_ci95": [
+        2.650987,
+        2.715224
+      ],
+      "bootstrap_ci95": [
+        2.651367,
+        2.715088
+      ],
+      "iid_width": 0.064237,
+      "bootstrap_width": 0.063721,
+      "ratio_boot_to_iid": 0.992
+    },
+    {
+      "run": 14,
+      "backend": "ibm_kingston",
+      "job_id": "d64vsrrtraac73bj1gu0",
+      "shots": 8192,
+      "S": 2.726074,
+      "iid_ci95": [
+        2.694392,
+        2.757757
+      ],
+      "bootstrap_ci95": [
+        2.693604,
+        2.757324
+      ],
+      "iid_width": 0.063365,
+      "bootstrap_width": 0.063721,
+      "ratio_boot_to_iid": 1.0056
+    },
+    {
+      "run": 15,
+      "backend": "ibm_kingston",
+      "job_id": "d64vssfs6ggc73fjms0g",
+      "shots": 8192,
+      "S": 2.69873,
+      "iid_ci95": [
+        2.666768,
+        2.730693
+      ],
+      "bootstrap_ci95": [
+        2.667236,
+        2.730225
+      ],
+      "iid_width": 0.063924,
+      "bootstrap_width": 0.062988,
+      "ratio_boot_to_iid": 0.9854
+    },
+    {
+      "run": 16,
+      "backend": "ibm_kingston",
+      "job_id": "d64vssrtraac73bj1gvg",
+      "shots": 8192,
+      "S": 1.292725,
+      "iid_ci95": [
+        1.254475,
+        1.330974
+      ],
+      "bootstrap_ci95": [
+        1.254883,
+        1.331055
+      ],
+      "iid_width": 0.0765,
+      "bootstrap_width": 0.076172,
+      "ratio_boot_to_iid": 0.9957
+    },
+    {
+      "run": 17,
+      "backend": "ibm_marrakesh",
+      "job_id": "d64vstbc4tus73fge2hg",
+      "shots": 8192,
+      "S": 2.726074,
+      "iid_ci95": [
+        2.694392,
+        2.757757
+      ],
+      "bootstrap_ci95": [
+        2.69458,
+        2.75708
+      ],
+      "iid_width": 0.063365,
+      "bootstrap_width": 0.0625,
+      "ratio_boot_to_iid": 0.9864
+    },
+    {
+      "run": 18,
+      "backend": "ibm_marrakesh",
+      "job_id": "d64vstqo8gvs73f53cqg",
+      "shots": 8192,
+      "S": 2.727539,
+      "iid_ci95": [
+        2.695878,
+        2.7592
+      ],
+      "bootstrap_ci95": [
+        2.694824,
+        2.759033
+      ],
+      "iid_width": 0.063322,
+      "bootstrap_width": 0.064209,
+      "ratio_boot_to_iid": 1.014
+    },
+    {
+      "run": 19,
+      "backend": "ibm_marrakesh",
+      "job_id": "d64vsubc4tus73fge2k0",
+      "shots": 8192,
+      "S": 2.743896,
+      "iid_ci95": [
+        2.712392,
+        2.775401
+      ],
+      "bootstrap_ci95": [
+        2.712891,
+        2.776123
+      ],
+      "iid_width": 0.063008,
+      "bootstrap_width": 0.063232,
+      "ratio_boot_to_iid": 1.0036
+    },
+    {
+      "run": 20,
+      "backend": "ibm_marrakesh",
+      "job_id": "d64vsuvs6ggc73fjms4g",
+      "shots": 8192,
+      "S": 1.409424,
+      "iid_ci95": [
+        1.371706,
+        1.447142
+      ],
+      "bootstrap_ci95": [
+        1.371582,
+        1.446777
+      ],
+      "iid_width": 0.075436,
+      "bootstrap_width": 0.075195,
+      "ratio_boot_to_iid": 0.9968
+    },
+    {
+      "run": 21,
+      "backend": "ibm_pittsburgh",
+      "job_id": "d5vlt92bju6s73bc0nj0",
+      "shots": 8192,
+      "S": 2.668945,
+      "iid_ci95": [
+        2.636707,
+        2.701183
+      ],
+      "bootstrap_ci95": [
+        2.636475,
+        2.701416
+      ],
+      "iid_width": 0.064476,
+      "bootstrap_width": 0.064941,
+      "ratio_boot_to_iid": 1.0072
+    },
+    {
+      "run": 22,
+      "backend": "ibm_pittsburgh",
+      "job_id": "d5vltb2bju6s73bc0nlg",
+      "shots": 8192,
+      "S": 2.66333,
+      "iid_ci95": [
+        2.631038,
+        2.695622
+      ],
+      "bootstrap_ci95": [
+        2.631104,
+        2.695312
+      ],
+      "iid_width": 0.064584,
+      "bootstrap_width": 0.064209,
+      "ratio_boot_to_iid": 0.9942
+    },
+    {
+      "run": 23,
+      "backend": "ibm_pittsburgh",
+      "job_id": "d5vm0fabju6s73bc0r90",
+      "shots": 16384,
+      "S": 2.64502,
+      "iid_ci95": [
+        2.62207,
+        2.667969
+      ],
+      "bootstrap_ci95": [
+        2.621948,
+        2.668091
+      ],
+      "iid_width": 0.045899,
+      "bootstrap_width": 0.046143,
+      "ratio_boot_to_iid": 1.0053
+    },
+    {
+      "run": 24,
+      "backend": "ibm_pittsburgh",
+      "job_id": "d5vm18juf71s73ciqnsg",
+      "shots": 8192,
+      "S": 1.274414,
+      "iid_ci95": [
+        1.235818,
+        1.31301
+      ],
+      "bootstrap_ci95": [
+        1.23559,
+        1.312988
+      ],
+      "iid_width": 0.077192,
+      "bootstrap_width": 0.077399,
+      "ratio_boot_to_iid": 1.0027
+    },
+    {
+      "run": 25,
+      "backend": "ibm_pittsburgh",
+      "job_id": "d5vm52hmvbjc73acjqug",
+      "shots": 8192,
+      "S": 2.650635,
+      "iid_ci95": [
+        2.618236,
+        2.683034
+      ],
+      "bootstrap_ci95": [
+        2.618646,
+        2.682373
+      ],
+      "iid_width": 0.064798,
+      "bootstrap_width": 0.063727,
+      "ratio_boot_to_iid": 0.9835
+    },
+    {
+      "run": 26,
+      "backend": "ibm_pittsburgh",
+      "job_id": "d64vsvfs6ggc73fjms60",
+      "shots": 8192,
+      "S": 2.300781,
+      "iid_ci95": [
+        2.265855,
+        2.335707
+      ],
+      "bootstrap_ci95": [
+        2.266357,
+        2.335693
+      ],
+      "iid_width": 0.069852,
+      "bootstrap_width": 0.069336,
+      "ratio_boot_to_iid": 0.9926
+    },
+    {
+      "run": 27,
+      "backend": "ibm_pittsburgh",
+      "job_id": "d64vsvvs6ggc73fjms7g",
+      "shots": 8192,
+      "S": 2.364258,
+      "iid_ci95": [
+        2.32971,
+        2.398806
+      ],
+      "bootstrap_ci95": [
+        2.32959,
+        2.397949
+      ],
+      "iid_width": 0.069097,
+      "bootstrap_width": 0.068359,
+      "ratio_boot_to_iid": 0.9893
+    },
+    {
+      "run": 28,
+      "backend": "ibm_pittsburgh",
+      "job_id": "d64vt0ao8gvs73f53cu0",
+      "shots": 8192,
+      "S": 2.276123,
+      "iid_ci95": [
+        2.241043,
+        2.311203
+      ],
+      "bootstrap_ci95": [
+        2.240723,
+        2.311041
+      ],
+      "iid_width": 0.070161,
+      "bootstrap_width": 0.070319,
+      "ratio_boot_to_iid": 1.0023
+    },
+    {
+      "run": 29,
+      "backend": "ibm_pittsburgh",
+      "job_id": "d64vt0rtraac73bj1h4g",
+      "shots": 8192,
+      "S": 1.640625,
+      "iid_ci95": [
+        1.605215,
+        1.676035
+      ],
+      "bootstrap_ci95": [
+        1.60498,
+        1.675537
+      ],
+      "iid_width": 0.070821,
+      "bootstrap_width": 0.070557,
+      "ratio_boot_to_iid": 0.9963
+    },
+    {
+      "run": 30,
+      "backend": "ibm_torino",
+      "job_id": "d64vt1ao8gvs73f53d00",
+      "shots": 8192,
+      "S": 1.978271,
+      "iid_ci95": [
+        1.940633,
+        2.01591
+      ],
+      "bootstrap_ci95": [
+        1.941888,
+        2.015869
+      ],
+      "iid_width": 0.075276,
+      "bootstrap_width": 0.073981,
+      "ratio_boot_to_iid": 0.9828
+    },
+    {
+      "run": 31,
+      "backend": "ibm_torino",
+      "job_id": "d64vt1rtraac73bj1h70",
+      "shots": 8192,
+      "S": 1.942139,
+      "iid_ci95": [
+        1.904287,
+        1.97999
+      ],
+      "bootstrap_ci95": [
+        1.904541,
+        1.979498
+      ],
+      "iid_width": 0.075703,
+      "bootstrap_width": 0.074957,
+      "ratio_boot_to_iid": 0.9902
+    },
+    {
+      "run": 32,
+      "backend": "ibm_torino",
+      "job_id": "d64vt2bc4tus73fge2qg",
+      "shots": 8192,
+      "S": 1.984131,
+      "iid_ci95": [
+        1.946528,
+        2.021734
+      ],
+      "bootstrap_ci95": [
+        1.945801,
+        2.021735
+      ],
+      "iid_width": 0.075206,
+      "bootstrap_width": 0.075934,
+      "ratio_boot_to_iid": 1.0097
+    },
+    {
+      "run": 33,
+      "backend": "ibm_torino",
+      "job_id": "d64vt2rc4tus73fge2rg",
+      "shots": 8192,
+      "S": 0.979736,
+      "iid_ci95": [
+        0.938996,
+        1.020476
+      ],
+      "bootstrap_ci95": [
+        0.938721,
+        1.02002
+      ],
+      "iid_width": 0.08148,
+      "bootstrap_width": 0.081299,
+      "ratio_boot_to_iid": 0.9978
+    }
+  ]
+}

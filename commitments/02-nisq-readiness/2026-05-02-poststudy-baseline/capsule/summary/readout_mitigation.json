@@ -1,0 +1,87 @@
+{
+  "description": "Readout error mitigation (M3R-style) for ibm_torino CHSH",
+  "readout_error_assumed": 0.045,
+  "results": [
+    {
+      "run": 1,
+      "job_id": "d64vt1ao8gvs73f53d00",
+      "shots": 8192,
+      "is_negative_control": false,
+      "S_raw": 1.978271,
+      "S_mitigated": 2.388928,
+      "ci95_raw": [
+        1.940633,
+        2.01591
+      ],
+      "ci95_mitigated": [
+        2.354198,
+        2.423659
+      ],
+      "gate_raw": "FAIL",
+      "gate_mitigated": "PASS",
+      "delta_S": 0.410657
+    },
+    {
+      "run": 2,
+      "job_id": "d64vt1rtraac73bj1h70",
+      "shots": 8192,
+      "is_negative_control": false,
+      "S_raw": 1.942139,
+      "S_mitigated": 2.345295,
+      "ci95_raw": [
+        1.904287,
+        1.97999
+      ],
+      "ci95_mitigated": [
+        2.310228,
+        2.380362
+      ],
+      "gate_raw": "FAIL",
+      "gate_mitigated": "PASS",
+      "delta_S": 0.403156
+    },
+    {
+      "run": 3,
+      "job_id": "d64vt2bc4tus73fge2qg",
+      "shots": 8192,
+      "is_negative_control": false,
+      "S_raw": 1.984131,
+      "S_mitigated": 2.396004,
+      "ci95_raw": [
+        1.946528,
+        2.021734
+      ],
+      "ci95_mitigated": [
+        2.361329,
+        2.430679
+      ],
+      "gate_raw": "FAIL",
+      "gate_mitigated": "PASS",
+      "delta_S": 0.411873
+    },
+    {
+      "run": 4,
+      "job_id": "d64vt2rc4tus73fge2rg",
+      "shots": 8192,
+      "is_negative_control": true,
+      "S_raw": 0.979736,
+      "S_mitigated": 1.183114,
+      "ci95_raw": [
+        0.938996,
+        1.020476
+      ],
+      "ci95_mitigated": [
+        1.143607,
+        1.22262
+      ],
+      "gate_raw": "FAIL",
+      "gate_mitigated": "FAIL",
+      "delta_S": 0.203377
+    }
+  ],
+  "summary": {
+    "bell_raw_pass": 0,
+    "bell_mitigated_pass": 3,
+    "negative_control_mitigated_pass": 0
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "kind": "preregistration_public_v1",
+  "title": "NISQ Readiness: Predeclared Evaluation Plan",
+  "version": "1.0+1.1",
+  "status": "DECLARED_BEFORE_EXECUTION",
+  "date_declared": "2026-02-01",
+  "purpose": "This document records an author-declared evaluation plan for the campaign. It specifies the workload matrix, metrics, decision rules, and reporting posture so a reader can inspect the declared plan rather than only the final narrative.",
+
+  "campaigns": {
+    "v1_0": {
+      "description": "Core evidence posture + CHSH entanglement-witness case study.",
+      "workloads": ["A1_BELL_2Q", "A2_GHZ_3Q", "A3_GHZ_5Q", "A4_MIRROR_1Q", "CHSH"],
+      "backends_target": ["ibm_kingston", "ibm_marrakesh", "ibm_torino", "ibm_fez"],
+      "backends_note": "If a listed backend is unavailable, record the substitution explicitly in the manifest; do not silently swap.",
+      "shots": [8192, 16384],
+      "repetitions_per_cell": 2
+    },
+    "v1_1_S1": {
+      "description": "Workload expansion to address toy-workload critiques.",
+      "workload_families": [
+        "mirror_1q_depth (d=1,2,4,8,16)",
+        "ghz_3, ghz_5, ghz_7",
+        "grover_2, grover_3",
+        "qft_4, qft_5",
+        "rand_w4_d8, rand_w4_d16 (seeds: 7, 42, 1337, 314159)",
+        "rand_w6_d8, rand_w6_d16 (seeds: 7, 42, 1337, 314159)",
+        "vqe_h2 (theta=0.59 rad, UCCSD 2Q)",
+        "qaoa_maxcut4_v2 (gamma=pi/4, beta=pi/8, corrected sign)"
+      ],
+      "total_workload_kinds": 30,
+      "backends_target": ["ibm_boston", "ibm_fez", "ibm_kingston", "ibm_marrakesh", "ibm_pittsburgh", "ibm_torino"],
+      "shots": 2048,
+      "expected_runs": 180
+    },
+    "v1_1_S2": {
+      "description": "Confirmatory stage at elevated shot count.",
+      "workload_subset": "mirror_1q (5 depths) + ghz_7 + rand_w6_d16 (4 seeds) = 10 kinds",
+      "backends_target": ["ibm_marrakesh", "ibm_pittsburgh"],
+      "shots": 8192,
+      "repetitions_per_cell": 2,
+      "expected_runs": 40
+    }
+  },
+
+  "metrics": {
+    "chsh_S": {
+      "definition": "CHSH parameter S = E(a0b0) + E(a0b1) + E(a1b0) - E(a1b1), where E is the parity correlation computed from per-setting bitstring distributions.",
+      "measurement_settings": {
+        "theta_a": [0.0, 1.5707963267948966],
+        "theta_b": [0.7853981633974483, -0.7853981633974483]
+      }
+    },
+    "mirror_return_probability": {
+      "definition": "P(0) from the output distribution of a mirror circuit that should return to |0>."
+    },
+    "ghz_parity_success": {
+      "definition": "P(0^n) + P(1^n) from the output distribution of a GHZ-state preparation."
+    },
+    "grover_target_hit": {
+      "definition": "P(1^n) from the output distribution of a Grover search circuit."
+    },
+    "qft_entropy": {
+      "definition": "Shannon entropy H = -sum(p*log2(p)) of the output distribution. Ideal QFT on n qubits produces a uniform distribution with H = n bits."
+    },
+    "random_collision": {
+      "definition": "Collision probability sum(p^2) of the output distribution. Smaller values indicate flatter (more uniform) distributions."
+    }
+  },
+
+  "decision_rules": {
+    "chsh_claim_gate": {
+      "rule": "Assert 'CHSH violation observed' ONLY when BOTH conditions are met: (1) S > 2.0, AND (2) CI95_low > 2.0 (95% confidence interval lower bound exceeds classical limit).",
+      "headline_requires": "Replicates on >= 2 backends OR >= 2 independent runs with declared stopping rules.",
+      "negative_control": "Include at least one product-state (non-entangled) circuit; it must FAIL the claim gate."
+    },
+    "general_reporting": {
+      "rule": "All metrics are reported as measurement summaries, not universal claims. Negative and partial results are first-class outputs.",
+      "stopping_rule": "Stop expanding shots/backends when CI width targets are met or budget limits are hit; record stopping rationale."
+    }
+  },
+
+  "uncertainty": {
+    "method": "Approximate binomial: SE(E) = sqrt((1 - E^2) / N), SE(S) = sqrt(sum(SE(E_i)^2)), CI95 = S +/- 1.96 * SE(S).",
+    "note": "This approximation is used for transparent sanity checks; production analysis may use stricter resampling."
+  },
+
+  "non_claims": [
+    "We do NOT claim 'new physics,' loophole-free Bell tests, or determinism of measurement outcomes.",
+    "We do NOT claim provider-signed attestation unless the provider explicitly signs an artifact we publish.",
+    "We do NOT claim universal performance improvements across devices/backends; results are measurements tied to declared workloads and runs."
+  ],
+
+  "independent_timestamp": {
+    "osf_doi": "NOT_AVAILABLE",
+    "note": "This file records an author-declared pre-execution plan dated 2026-02-01. It was not independently timestamped by OSF before execution. Zenodo DOI 10.5281/zenodo.19954164 for the reconciled release is a public release timestamp, not a pre-execution registry timestamp; journal-facing language should describe this surface as a predeclared plan unless an independent pre-run timestamp is later supplied.",
+    "arxiv_ancillary_timestamp": "NOT_AVAILABLE"
+  },
+
+  "analysis_additions_v2": {
+    "noise_model_comparison": "Depolarizing gate+readout model comparison against observed CHSH S values (Eq. S_noisy = 2sqrt(2)(1-eps_2q)(1-2*eps_ro)^2). Note: v1 of this field incorrectly showed (1-eps_2q)^2; corrected in v4 to reflect single CX gate.",
+    "bootstrap_ci_validation": "Non-parametric bootstrap (B=10000) validation of IID confidence intervals for all 33 CHSH runs",
+    "cross_backend_correlation": "Pairwise Spearman rank correlations of workload difficulty across all 6 backends",
+    "readout_mitigation": "M3-style readout error mitigation applied to ibm_torino CHSH runs as diagnostic",
+    "scaling_analysis": "GHZ parity exponential decay fit P(n) = A(1-2p)^n for per-qubit error extraction"
+  }
+}

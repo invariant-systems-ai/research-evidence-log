@@ -1,0 +1,74 @@
+{
+  "type": "aiir.commitment_receipt",
+  "schema": "aiir/commitment_receipt.v1",
+  "version": "1.5.1",
+  "subject": {
+    "name": "nisq-poststudy-baseline-public-packet",
+    "kind": "paper_sidecar_packet"
+  },
+  "statement": {
+    "summary": "Post-study public sidecar packet for the NISQ-readiness paper, binding the copied public source surfaces, manifest, and local packet checksums."
+  },
+  "artifacts": [
+    {
+      "type": "file",
+      "ref": "README.md",
+      "digest": "sha256:c53f944f1a67f7660442bae2d496c0f82a138e132cdcd9c1601b3f84dbfd91c0",
+      "role": "artifact",
+      "size": 1743
+    },
+    {
+      "type": "file",
+      "ref": "COMMITMENT.json",
+      "digest": "sha256:4027b88155adb45d5df0286742ec59bd9809190bcbdcdd0a9d84123353e97c4c",
+      "role": "artifact",
+      "size": 6053
+    },
+    {
+      "type": "file",
+      "ref": "SHA256SUMS",
+      "digest": "sha256:6d529953ab3310ea2502b56095fed37fa8d029b2a908654ce76db9918fa639eb",
+      "role": "artifact",
+      "size": 364
+    },
+    {
+      "type": "directory",
+      "ref": "source",
+      "digest": "sha256:2cc027fb3662854dd395f2cfa98967bc370f023cbc9c521cb7a74c16bba14905",
+      "role": "artifact",
+      "entry_count": 3,
+      "file_count": 3,
+      "members": [
+        {
+          "path": "24_EXECUTION_ORDER_AND_TIMESTAMP_POSTURE_20260501.md",
+          "type": "file",
+          "digest": "sha256:1f1c95a54fc2a17ae1ad8b05bd3a1b777488657c62a83d793922d62428dc0363",
+          "size": 3303
+        },
+        {
+          "path": "PREREGISTRATION_PUBLIC.json",
+          "type": "file",
+          "digest": "sha256:b4114a0ea524204bb08c36759a58c5b3448a06d7a21507a1b67c2d2e8a3ba870",
+          "size": 5820
+        },
+        {
+          "path": "nisq-readiness-evidence-capsule-v2026.05.01-zenodo.tar.gz.sha256",
+          "type": "file",
+          "digest": "sha256:869af33a43d459708cacf149a7e624487746c9137c36889ae21021b465cba279",
+          "size": 124
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "repository": "https://github.com/invariant-systems-ai/evidence-commitments.git",
+    "tool": "https://github.com/invariant-systems-ai/aiir@1.5.1",
+    "generator": "aiir.cli"
+  },
+  "receipt_id": "c1-aed808e54ca3be3286bb15d3875cd70d",
+  "content_hash": "sha256:aed808e54ca3be3286bb15d3875cd70d3d9b90ae68b54a6e81eb5255c3860769",
+  "timestamp": "2026-05-02T12:54:49Z",
+  "extensions": {
+    "namespace": "02-nisq-readiness"
+  }
+}

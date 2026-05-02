@@ -3,12 +3,26 @@
 This directory records a public post-study commitment for the NISQ-readiness campaign.
 
 What this entry does:
+
 - places the declared evaluation-plan surface in a public Git history
 - binds the public Zenodo evidence package checksum alongside that plan surface
 - establishes the repository surface that future campaigns will use on day zero
+- mirrors the exact published 82-file public capsule allowlist that the paper can cite directly
+- adds AIIR-native receipt bundles for the public packet and the direct Zenodo digest binding
+- adds an AIIR-native receipt over the full mirrored capsule
+- records Sigstore bundle sidecars and Rekor-backed timestamps for the AIIR receipt set
 
 What this entry does not do:
+
 - it does not create an independent pre-execution timestamp for the February 1, 2026 plan
 - it does not retroactively convert the NISQ paper into a preregistered study
 
-The machine-readable manifest for this entry is `COMMITMENT.json`.
+This entry now has three parallel surfaces:
+
+- `source/` preserves the copied public plan, timestamp-boundary, and checksum files verbatim
+- `capsule/` is a verbatim mirror of the published public release allowlist, validated locally with `sha256sum -c checksums.sha256`
+- `aiir/` carries AIIR-native receipt bundles and Sigstore bundle sidecars over the capsule mirror, the minimal chronology packet, and the published Zenodo tarball digest
+
+The machine-readable manifests for this entry are `COMMITMENT.json` and `aiir/BUNDLESET.json`.
+The primary paper-referenceable sidecar surface is `capsule/`, with its integrity bound by `aiir/receipts/receipt_nisq-public-evidence-cap_a25683519087f75a.json`.
+Exact receipt filenames, per-artifact hashes, signer policy, and Rekor entry details are recorded in `aiir/BUNDLESET.json`.
