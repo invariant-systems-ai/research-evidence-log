@@ -6,7 +6,6 @@ This note tightens the timestamp posture for the NISQ-readiness capsule.
 
 - The public plan file `PREREGISTRATION_PUBLIC.json` is an author-declared plan surface with `date_declared: 2026-02-01`.
 - Later IBM and AWS execution artifacts provide execution-order evidence that jobs were run after that declared date.
-- A later public repository commitment now exists at `https://github.com/invariant-systems-ai/public-plan-commitments` for the preserved plan and timestamp-boundary note.
 - These later timestamps do **not** convert the plan into an independently preregistered study, because the plan itself was not timestamped by an external registry before execution.
 
 ## Author-Declared Plan Date
@@ -14,13 +13,6 @@ This note tightens the timestamp posture for the NISQ-readiness capsule.
 - Source surface: `anc/PREREGISTRATION_PUBLIC.json`
 - Declared date: `2026-02-01`
 - Independent registry timestamp: not available (`OSF DOI: NOT_AVAILABLE`)
-
-## Public Repository Commitment Surface
-
-- Repository: `https://github.com/invariant-systems-ai/public-plan-commitments`
-- Commitment path: `commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/`
-- Public commitment date: `2026-05-02`
-- Interpretation: this is a public post-study chronology surface for the preserved plan and release hash, not an independent pre-execution registry timestamp
 
 ## IBM Execution-Order Evidence
 
@@ -76,6 +68,5 @@ These are provider-native AWS timestamps, not merely local wrapper times.
 
 - Supported: the capsule preserves concrete execution-order evidence showing that the author-declared plan predates later IBM/AWS execution artifacts.
 - Supported: the AWS second-provider confirmation is backed by machine-readable provider-native timing and hash facts, not only a prose note.
-- Supported: the preserved plan and timestamp-boundary note are now copied into a public Git history for future campaign discipline and outside inspection.
 - Not supported: a claim that the plan was independently preregistered by a third party before execution.
 - Not supported: a claim that all IBM timing in the paper bundle is already packaged in the same provider-native form as the AWS Braket companion surface.

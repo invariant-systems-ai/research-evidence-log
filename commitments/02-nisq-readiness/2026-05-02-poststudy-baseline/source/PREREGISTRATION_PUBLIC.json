@@ -92,10 +92,7 @@
 
   "independent_timestamp": {
     "osf_doi": "NOT_AVAILABLE",
-    "public_repo_url": "https://github.com/invariant-systems-ai/public-plan-commitments",
-    "public_repo_commitment_path": "commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/",
-    "public_repo_commitment_date": "2026-05-02",
-    "note": "This file records an author-declared pre-execution plan dated 2026-02-01. It was not independently timestamped by OSF before execution. Zenodo DOI 10.5281/zenodo.19954164 for the reconciled release is a public release timestamp, not a pre-execution registry timestamp. A later public repository commitment was created on 2026-05-02 at https://github.com/invariant-systems-ai/public-plan-commitments; because that commit post-dates execution, it is a public chronology surface and future-work baseline, not a pre-execution registry timestamp.",
+    "note": "This file records an author-declared pre-execution plan dated 2026-02-01. It was not independently timestamped by OSF before execution. Zenodo DOI 10.5281/zenodo.19954164 for the reconciled release is a public release timestamp, not a pre-execution registry timestamp; journal-facing language should describe this surface as a predeclared plan unless an independent pre-run timestamp is later supplied.",
     "arxiv_ancillary_timestamp": "NOT_AVAILABLE"
   },
 
