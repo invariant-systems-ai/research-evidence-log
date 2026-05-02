@@ -7,7 +7,7 @@
     "kind": "release_digest_binding"
   },
   "statement": {
-    "summary": "Published Zenodo tarball digest for the 2026-05-02 NISQ evidence capsule."
+    "summary": "Published Zenodo tarball digest for the 2026-05-02 NISQ benchmarking evidence capsule."
   },
   "artifacts": [
     {
@@ -18,12 +18,12 @@
     }
   ],
   "provenance": {
-    "repository": "https://github.com/invariant-systems-ai/evidence-commitments.git",
+    "repository": "https://github.com/invariant-systems-ai/research-evidence-log.git",
     "tool": "https://github.com/invariant-systems-ai/aiir@1.5.1",
     "generator": "aiir.cli"
   },
-  "receipt_id": "c1-83c52551b82e822e05b2e7a2051887bb",
-  "content_hash": "sha256:83c52551b82e822e05b2e7a2051887bb30d66991450d941a15b6b26192a5c56a",
-  "timestamp": "2026-05-02T19:30:04Z",
+  "receipt_id": "c1-59e1fd09b616c734d26de5372d07854b",
+  "content_hash": "sha256:59e1fd09b616c734d26de5372d07854be09e0f01e05eecb84d916db0a7d704e1",
+  "timestamp": "2026-05-02T20:10:51Z",
   "extensions": {}
 }

@@ -1,6 +1,6 @@
-# Evidence Commitments
+# Research Evidence Log
 
-This repository is the public commitment surface for evaluation plans, evidence-package hashes, and later transparency-log references for Invariant Systems research campaigns.
+This repository is the public evidence log for evaluation plans, evidence-package hashes, paper-facing capsule mirrors, and later transparency-log references for Invariant Systems research campaigns.
 
 Purpose:
 
@@ -16,28 +16,28 @@ Claim boundary:
 
 Current contents:
 
-- [commitments/nisq-readiness-2026-05-02/](commitments/nisq-readiness-2026-05-02/README.md) records the public evidence companion for the NISQ-readiness paper, anchored to the released Zenodo package and the pushed paper-repo commit
-- [commitments/nisq-readiness-2026-05-02/capsule/](commitments/nisq-readiness-2026-05-02/capsule/README.md) mirrors the exact 82-file published public capsule allowlist and validates it against the shipped `checksums.sha256`
-- [commitments/nisq-readiness-2026-05-02/aiir/](commitments/nisq-readiness-2026-05-02/aiir/BUNDLESET.json) adds AIIR-native commitment receipts and CBOR sidecars for the full capsule mirror, the minimal chronology packet, and the published Zenodo tarball digest
+- [commitments/nisq-benchmarking-evidence-2026-05-02/](commitments/nisq-benchmarking-evidence-2026-05-02/README.md) records the public evidence companion for the NISQ benchmarking paper, anchored to the released Zenodo package and the paper-facing capsule mirror
+- [commitments/nisq-benchmarking-evidence-2026-05-02/capsule/](commitments/nisq-benchmarking-evidence-2026-05-02/capsule/README.md) mirrors the current 82-file paper-facing capsule and validates it against the shipped `checksums.sha256`
+- [commitments/nisq-benchmarking-evidence-2026-05-02/aiir/](commitments/nisq-benchmarking-evidence-2026-05-02/aiir/BUNDLESET.json) adds AIIR-native commitment receipts and CBOR sidecars for the full capsule mirror, the minimal chronology packet, and the published Zenodo tarball digest
 
 Featured campaign:
 
-The current public release is the NISQ-readiness paper bundle, *An Evidence-First
+The current public release is the NISQ benchmarking paper bundle, *An Evidence-First
 Reproducibility Capsule for NISQ Benchmarking*. The campaign entry combines four
 review surfaces in one place: the paper-facing 82-file capsule mirror, the copied
 public plan and checksum sidecars, AIIR-native receipt bundles with Sigstore and
 Rekor transparency material, and direct links to the current Zenodo release. Read
 it as the public release note for the paper rather than only as a chronology log:
-start with the [campaign README](commitments/nisq-readiness-2026-05-02/README.md),
-then open the [paper capsule](commitments/nisq-readiness-2026-05-02/capsule/README.md)
-or the [manuscript PDF](commitments/nisq-readiness-2026-05-02/capsule/nisq_readiness.pdf).
+start with the [campaign README](commitments/nisq-benchmarking-evidence-2026-05-02/README.md),
+then open the [paper capsule](commitments/nisq-benchmarking-evidence-2026-05-02/capsule/README.md)
+or the [manuscript PDF](commitments/nisq-benchmarking-evidence-2026-05-02/capsule/nisq_readiness.pdf).
 
 Paper linkage for the current NISQ campaign:
 
 - paper title: `An Evidence-First Reproducibility Capsule for NISQ Benchmarking`
-- manuscript PDF: [commitments/nisq-readiness-2026-05-02/capsule/nisq_readiness.pdf](commitments/nisq-readiness-2026-05-02/capsule/nisq_readiness.pdf)
-- manuscript source: [commitments/nisq-readiness-2026-05-02/capsule/nisq_readiness.tex](commitments/nisq-readiness-2026-05-02/capsule/nisq_readiness.tex)
-- paper-facing capsule README: [commitments/nisq-readiness-2026-05-02/capsule/README.md](commitments/nisq-readiness-2026-05-02/capsule/README.md)
+- manuscript PDF: [commitments/nisq-benchmarking-evidence-2026-05-02/capsule/nisq_readiness.pdf](commitments/nisq-benchmarking-evidence-2026-05-02/capsule/nisq_readiness.pdf)
+- manuscript source: [commitments/nisq-benchmarking-evidence-2026-05-02/capsule/nisq_readiness.tex](commitments/nisq-benchmarking-evidence-2026-05-02/capsule/nisq_readiness.tex)
+- paper-facing capsule README: [commitments/nisq-benchmarking-evidence-2026-05-02/capsule/README.md](commitments/nisq-benchmarking-evidence-2026-05-02/capsule/README.md)
 - current public Zenodo record: [https://zenodo.org/records/19985231](https://zenodo.org/records/19985231)
 - current public Zenodo version DOI: [10.5281/zenodo.19985231](https://doi.org/10.5281/zenodo.19985231)
 
@@ -53,4 +53,4 @@ Planned steady-state workflow for new campaigns:
 
 Canonical URL:
 
-- [https://github.com/invariant-systems-ai/evidence-commitments](https://github.com/invariant-systems-ai/evidence-commitments)
+- [https://github.com/invariant-systems-ai/research-evidence-log](https://github.com/invariant-systems-ai/research-evidence-log)

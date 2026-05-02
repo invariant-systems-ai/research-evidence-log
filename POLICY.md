@@ -2,11 +2,12 @@
 
 ## Repository Role
 
-This repository is a public chronology and hash-commitment surface.
+This repository is a public research-evidence log for chronology, hash commitments, and paper-facing public capsule mirrors.
 
 It is used to publish:
 - author-declared evaluation plans that are safe to disclose publicly
 - hashes of released evidence packages
+- current paper-facing companion mirrors built from published public allowlists
 - AIIR commitment receipts and related sidecars for those public surfaces
 - later links to external transparency-log entries
 

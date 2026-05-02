@@ -1,8 +1,8 @@
 {
   "schema": "invariant-systems/public_plan_commitment.v1",
-  "commitment_id": "nisq-readiness-2026-05-02",
+  "commitment_id": "nisq-benchmarking-evidence-2026-05-02",
   "commitment_timestamp_utc": "2026-05-02T19:21:36Z",
-  "repository_url": "https://github.com/invariant-systems-ai/evidence-commitments",
+  "repository_url": "https://github.com/invariant-systems-ai/research-evidence-log",
   "campaign": {
     "program_id": "02-nisq-readiness",
     "title": "An Evidence-First Reproducibility Capsule for NISQ Benchmarking",
@@ -24,8 +24,8 @@
   },
   "source_repository": {
     "path": "/home/kaleidos/Desktop/invariant-systems-lab/invariant-systems-research",
-    "head_commit": "c95a5fe608efd08bd63dcbabb824043666fba5f3",
-    "note": "The copied source surfaces mirror the pushed research-repo release at the recorded source-repository HEAD commit."
+    "head_commit": "3ec5b996db29cda059daf5abdb9ed636cb60f0df",
+    "note": "The recorded head_commit anchors the exact committed source-repo state mirrored in `capsule/` for this entry."
   },
   "zenodo": {
     "record_url": "https://zenodo.org/records/19985231",
@@ -42,7 +42,7 @@
     "public_summary_path": "capsule/PUBLIC_SUMMARY.md",
     "record_url": "https://zenodo.org/records/19985231",
     "version_doi": "10.5281/zenodo.19985231",
-    "note": "The public paper-facing evidence packet is mirrored verbatim under `capsule/`; chronology commentary and receipt material stay outside the mirror."
+    "note": "The current paper-facing evidence packet is mirrored under `capsule/`, while `source/` separately anchors the last published Zenodo tarball checksum; chronology commentary and receipt material stay outside the mirror."
   },
   "artifacts": [
     {
@@ -74,7 +74,7 @@
     "file_count": 82,
     "ancillary_file_count": 55,
     "summary_file_count": 5,
-    "note": "This is a verbatim mirror of the published public release allowlist intended as the primary paper-referenceable sidecar capsule."
+    "note": "This is the primary paper-referenceable sidecar capsule for the current NISQ benchmarking evidence companion, built from the published 82-file allowlist and validated locally via `capsule/checksums.sha256`."
   },
   "aiir": {
     "bundle_manifest": "aiir/BUNDLESET.json",

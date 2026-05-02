@@ -1,11 +1,11 @@
 {
   "schema": "invariant-systems/aiir_bundle_set.v1",
-  "bundle_set_id": "nisq-readiness-2026-05-02-aiir",
-  "generated_at_utc": "2026-05-02T19:30:08Z",
+  "bundle_set_id": "nisq-benchmarking-evidence-2026-05-02-aiir",
+  "generated_at_utc": "2026-05-02T21:10:39Z",
   "paper_reference_bundle_id": "public-capsule-mirror",
   "campaign": {
     "program_id": "02-nisq-readiness",
-    "commitment_id": "nisq-readiness-2026-05-02"
+    "commitment_id": "nisq-benchmarking-evidence-2026-05-02"
   },
   "generator": {
     "tool": "AIIR",
@@ -17,7 +17,7 @@
   },
   "verification": {
     "hash_manifest_path": "aiir/SHA256SUMS",
-    "hash_manifest_sha256": "sha256:4c5971bdd1e4dc62c796d008127157c764e9adc7d4742a256a5ad7cb4eb7012d",
+    "hash_manifest_sha256": "sha256:6ec6894769bbbf7e4a476068f62f389f01d1d75a222a54b1b9068a59d84bd350",
     "local_json_and_cbor_verification": "passed",
     "published_checksum_validation": {
       "path": "capsule/checksums.sha256",
@@ -37,22 +37,22 @@
       "bundle_id": "public-capsule-mirror",
       "subject_name": "nisq-paper-capsule",
       "subject_kind": "paper_public_capsule",
-      "receipt_id": "c1-82f4d312b558fd71b6c16bdddc99c5c2",
-      "content_hash": "sha256:82f4d312b558fd71b6c16bdddc99c5c2b6af226c8b2e52976db2224a49fcdc92",
+      "receipt_id": "c1-c2dcaac128b27d7dd484307de5dc25c5",
+      "content_hash": "sha256:c2dcaac128b27d7dd484307de5dc25c5f26503d2a22988a0d815096d4e5b4c88",
       "receipt_json": {
-        "path": "aiir/receipts/receipt_nisq-paper-capsule_a25682f4d312b558.json",
-        "sha256": "8f324f26cbc6efe6253ff04b1fa071f0bc6c0bac72dd7ad232f6dffb287b9cb5",
-        "size_bytes": 18621
+        "path": "aiir/receipts/receipt_nisq-paper-capsule_a256c2dcaac128b2.json",
+        "sha256": "0f68496149344d96cf8caf6c064e7b1ed5da646e3dd89c524bb65ee939b985d0",
+        "size_bytes": 18635
       },
       "receipt_cbor": {
-        "path": "aiir/receipts/receipt_nisq-paper-capsule_a25682f4d312b558.cbor",
-        "sha256": "2561f09a08ffd607263dea703409130c7770ff7a704fd5c7c08843bb3a68e6ce",
-        "size_bytes": 11566
+        "path": "aiir/receipts/receipt_nisq-paper-capsule_a256c2dcaac128b2.cbor",
+        "sha256": "57c8a947457803adfafc5607dc065b8662ae732989266649ac33448bc7eb8cc8",
+        "size_bytes": 11580
       },
       "sigstore_bundle": {
-        "path": "aiir/receipts/receipt_nisq-paper-capsule_a25682f4d312b558.json.sigstore",
-        "sha256": "cb577d99a708a821b1fdc2499dffdde320e3f2e2f39398d1c43dc21792ea7aec",
-        "size_bytes": 6796,
+        "path": "aiir/receipts/receipt_nisq-paper-capsule_a256c2dcaac128b2.json.sigstore",
+        "sha256": "2936ab68ef53d95431b3bdbd2e812b09f938839ae98941c4bf9452b099e7a644",
+        "size_bytes": 6937,
         "verification": {
           "status": "passed",
           "policy": "identity",
@@ -61,16 +61,16 @@
         },
         "bundle": {
           "media_type": "application/vnd.dev.sigstore.bundle.v0.3+json",
-          "certificate_sha256": "sha256:2d039ac9c4cb72092e19c444c324183b2337e602a7a9f2abac1ae365500d580d",
+          "certificate_sha256": "sha256:3a9bac7a3d70f1a8075d59f93267da63851cc6810c9a97a36e15c6c298243eaa",
           "tlog_entry_count": 1,
           "rfc3161_timestamp_count": 1,
           "entries": [
             {
               "kind": "hashedrekord",
-              "log_index": "1429549332",
+              "log_index": "1429569027",
               "log_id": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0=",
-              "integrated_time": "1777750199",
-              "integrated_time_rfc3339": "2026-05-02T19:29:59Z",
+              "integrated_time": "1777752577",
+              "integrated_time_rfc3339": "2026-05-02T20:09:37Z",
               "has_signed_entry_timestamp": true,
               "has_checkpoint": true
             }
@@ -81,7 +81,7 @@
         {
           "path": "capsule",
           "type": "directory",
-          "digest": "sha256:ff65fa7a697d9947b31930cfa20cf9dcbda47c7a4ac6e03fad0c9200edbc481e",
+          "digest": "sha256:fa641d67acfe3c0b2310ac184ca22bb8cf7f323406392e1f16fc1380862eaf55",
           "entry_count": 84,
           "file_count": 82,
           "ancillary_file_count": 55,
@@ -96,22 +96,22 @@
       "bundle_id": "paper-sidecar-packet",
       "subject_name": "nisq-paper-sidecar",
       "subject_kind": "paper_sidecar_packet",
-      "receipt_id": "c1-2ab8f9ae5fdf0ed80d764d21bf763cb5",
-      "content_hash": "sha256:2ab8f9ae5fdf0ed80d764d21bf763cb5bbe00d831a3dc8ab9b8afc2c655849a4",
+      "receipt_id": "c1-e4d1ae292e00b6aacdba9fa4425b4f37",
+      "content_hash": "sha256:e4d1ae292e00b6aacdba9fa4425b4f37579f8c6f13de8e068a75843d0c08b21e",
       "receipt_json": {
-        "path": "aiir/receipts/receipt_nisq-paper-sidecar_a2562ab8f9ae5fdf.json",
-        "sha256": "3c12fbc62ded62fd6ed073fbf342e6079d4eebcd52914153b11e7909094b2745",
-        "size_bytes": 2351
+        "path": "aiir/receipts/receipt_nisq-paper-sidecar_a256e4d1ae292e00.json",
+        "sha256": "92d2699c697ff847b43bf5386e27562a8de229f9568497f4d890d3ae621f243d",
+        "size_bytes": 2352
       },
       "receipt_cbor": {
-        "path": "aiir/receipts/receipt_nisq-paper-sidecar_a2562ab8f9ae5fdf.cbor",
-        "sha256": "aad7da7c2a64a5711c643ad4dbfe4e9da721ecada997610f24b0364c901d3cd9",
-        "size_bytes": 1615
+        "path": "aiir/receipts/receipt_nisq-paper-sidecar_a256e4d1ae292e00.cbor",
+        "sha256": "12f4ce5d99c7ec02f52d2a78a0fa83e99fdca23ec377fbf16e74c6b0fad1171d",
+        "size_bytes": 1616
       },
       "sigstore_bundle": {
-        "path": "aiir/receipts/receipt_nisq-paper-sidecar_a2562ab8f9ae5fdf.json.sigstore",
-        "sha256": "c3563b901f7c826b46b10a548be5d6ea23beb6728a4b2a791fd99287036c0865",
-        "size_bytes": 6812,
+        "path": "aiir/receipts/receipt_nisq-paper-sidecar_a256e4d1ae292e00.json.sigstore",
+        "sha256": "5964e87410d785879ffb0712a3590d74124c66f79808bb6b8c88ba5f35cc58e7",
+        "size_bytes": 6984,
         "verification": {
           "status": "passed",
           "policy": "identity",
@@ -120,16 +120,16 @@
         },
         "bundle": {
           "media_type": "application/vnd.dev.sigstore.bundle.v0.3+json",
-          "certificate_sha256": "sha256:f4b8d5b34feb64e194c924c0dbb597c0dc16b26065e17e8634c00a966a9653d6",
+          "certificate_sha256": "sha256:1e797472f8466852fc4eb7ba2cdbfc1d01d328f28d6192ddb37eb9d64f8fe967",
           "tlog_entry_count": 1,
           "rfc3161_timestamp_count": 1,
           "entries": [
             {
               "kind": "hashedrekord",
-              "log_index": "1429549343",
+              "log_index": "1429608024",
               "log_id": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0=",
-              "integrated_time": "1777750204",
-              "integrated_time_rfc3339": "2026-05-02T19:30:04Z",
+              "integrated_time": "1777755998",
+              "integrated_time_rfc3339": "2026-05-02T21:06:38Z",
               "has_signed_entry_timestamp": true,
               "has_checkpoint": true
             }
@@ -140,12 +140,12 @@
         {
           "path": "README.md",
           "type": "file",
-          "digest": "sha256:e21faec385d5f30e1267105ac5d57754c75aa8bc2d72202911f5f455e599b967"
+          "digest": "sha256:0c38dfe35178aa790dc7018ff59d0a05c51c33f94ffd369fc555cf6fa7f1ef7e"
         },
         {
           "path": "COMMITMENT.json",
           "type": "file",
-          "digest": "sha256:6d71314011f2891e1284626c5776a7e21aa81c62568cf609f8fea6b853345bae"
+          "digest": "sha256:e347cc0a9f8378f3dcb547e20b033641f9050ecc6a189a822fdc1003dc4c31e6"
         },
         {
           "path": "SHA256SUMS",
@@ -182,22 +182,22 @@
       "bundle_id": "zenodo-release-digest",
       "subject_name": "nisq-zenodo-v2026-05-02",
       "subject_kind": "release_digest_binding",
-      "receipt_id": "c1-83c52551b82e822e05b2e7a2051887bb",
-      "content_hash": "sha256:83c52551b82e822e05b2e7a2051887bb30d66991450d941a15b6b26192a5c56a",
+      "receipt_id": "c1-59e1fd09b616c734d26de5372d07854b",
+      "content_hash": "sha256:59e1fd09b616c734d26de5372d07854be09e0f01e05eecb84d916db0a7d704e1",
       "receipt_json": {
-        "path": "aiir/receipts/receipt_nisq-zenodo-v2026-05-02_a25683c52551b82e.json",
-        "sha256": "febe81da5dab3c087acb96e14cd19beb9dbc59d97726cdc5d5c20aa2b98bc2d1",
-        "size_bytes": 933
+        "path": "aiir/receipts/receipt_nisq-zenodo-v2026-05-02_a25659e1fd09b616.json",
+        "sha256": "4e8924ed934304d600b3e3091725e3db663dc5354ef9dac37cfd8026be782ef9",
+        "size_bytes": 947
       },
       "receipt_cbor": {
-        "path": "aiir/receipts/receipt_nisq-zenodo-v2026-05-02_a25683c52551b82e.cbor",
-        "sha256": "9c2e0b52d1519f529949c075b9ac110ecc854ba428bb59c5f445d80e8dbdc8ad",
-        "size_bytes": 689
+        "path": "aiir/receipts/receipt_nisq-zenodo-v2026-05-02_a25659e1fd09b616.cbor",
+        "sha256": "e0b8711c94bf1b97d9fbf8b592dfc1eb43e35db15246f68dd0b8a4df3555eefc",
+        "size_bytes": 703
       },
       "sigstore_bundle": {
-        "path": "aiir/receipts/receipt_nisq-zenodo-v2026-05-02_a25683c52551b82e.json.sigstore",
-        "sha256": "13b1c57e597b835e8cd72edfd6a760a33a9c9146d5e22e8ab91a1565446a20e0",
-        "size_bytes": 6843,
+        "path": "aiir/receipts/receipt_nisq-zenodo-v2026-05-02_a25659e1fd09b616.json.sigstore",
+        "sha256": "b2ecef40f892fd8b38d087cb5af78f871b7739f49443f5ba9b5c59f76424559c",
+        "size_bytes": 6984,
         "verification": {
           "status": "passed",
           "policy": "identity",
@@ -206,16 +206,16 @@
         },
         "bundle": {
           "media_type": "application/vnd.dev.sigstore.bundle.v0.3+json",
-          "certificate_sha256": "sha256:e88c8e0975a972efd7fbb296951452e14b98fb97edaa115ef1c60f1d25f13c12",
+          "certificate_sha256": "sha256:f863ac9d23af621f948a2a3dec73b7f2d6d7aec99c84b0263406bf1e8d184587",
           "tlog_entry_count": 1,
           "rfc3161_timestamp_count": 1,
           "entries": [
             {
               "kind": "hashedrekord",
-              "log_index": "1429549364",
+              "log_index": "1429569659",
               "log_id": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0=",
-              "integrated_time": "1777750208",
-              "integrated_time_rfc3339": "2026-05-02T19:30:08Z",
+              "integrated_time": "1777752670",
+              "integrated_time_rfc3339": "2026-05-02T20:11:10Z",
               "has_signed_entry_timestamp": true,
               "has_checkpoint": true
             }

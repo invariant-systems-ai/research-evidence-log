@@ -7,13 +7,13 @@
     "kind": "paper_public_capsule"
   },
   "statement": {
-    "summary": "Paper-facing public capsule mirror for the NISQ evidence companion."
+    "summary": "Paper-facing public capsule mirror for the NISQ benchmarking evidence companion."
   },
   "artifacts": [
     {
       "type": "directory",
       "ref": "capsule",
-      "digest": "sha256:ff65fa7a697d9947b31930cfa20cf9dcbda47c7a4ac6e03fad0c9200edbc481e",
+      "digest": "sha256:fa641d67acfe3c0b2310ac184ca22bb8cf7f323406392e1f16fc1380862eaf55",
       "role": "artifact",
       "entry_count": 84,
       "file_count": 82,
@@ -57,8 +57,8 @@
         {
           "path": "README.md",
           "type": "file",
-          "digest": "sha256:917d611f61c863c8c77533ebdb800c67b2176cb6b83aa36ab68bcbfc302d07bc",
-          "size": 7718
+          "digest": "sha256:55af0786bf0cc899a789b0712feb46bd321f416ab1215ec87e0c73641746e322",
+          "size": 7764
         },
         {
           "path": "REPRODUCE.md",
@@ -415,7 +415,7 @@
         {
           "path": "checksums.sha256",
           "type": "file",
-          "digest": "sha256:ed246f134e5567356120fd997f14f33e7dfedd480a37c7c4b05e9d415dcb8a24",
+          "digest": "sha256:e47b88368581fbbd640cd9fb01429d537e027a3dfc13a7bc390d2cd5dd52d1b6",
           "size": 7562
         },
         {
@@ -463,14 +463,14 @@
         {
           "path": "nisq_readiness.pdf",
           "type": "file",
-          "digest": "sha256:f13c7953ded04a56100ac6b87ef3ef39270a71b45dbc9282f39c123939c0bba0",
-          "size": 579386
+          "digest": "sha256:86f5a775a04a8263b167ef9ce7fd6697b941b89615c9b7b4f636fc94de669ddf",
+          "size": 579355
         },
         {
           "path": "nisq_readiness.tex",
           "type": "file",
-          "digest": "sha256:fe743a9f0a91f77dac7cedf920734113bc9b6a74d48319c389aceb7fb1147b63",
-          "size": 71773
+          "digest": "sha256:5800bc736e237636e6ca285daa0836db5b1bed4e6083c15a1552df2b7e86d4c6",
+          "size": 71752
         },
         {
           "path": "nisq_readinessNotes.bib",
@@ -522,12 +522,12 @@
     }
   ],
   "provenance": {
-    "repository": "https://github.com/invariant-systems-ai/evidence-commitments.git",
+    "repository": "https://github.com/invariant-systems-ai/research-evidence-log.git",
     "tool": "https://github.com/invariant-systems-ai/aiir@1.5.1",
     "generator": "aiir.cli"
   },
-  "receipt_id": "c1-82f4d312b558fd71b6c16bdddc99c5c2",
-  "content_hash": "sha256:82f4d312b558fd71b6c16bdddc99c5c2b6af226c8b2e52976db2224a49fcdc92",
-  "timestamp": "2026-05-02T19:27:51Z",
+  "receipt_id": "c1-c2dcaac128b27d7dd484307de5dc25c5",
+  "content_hash": "sha256:c2dcaac128b27d7dd484307de5dc25c5f26503d2a22988a0d815096d4e5b4c88",
+  "timestamp": "2026-05-02T20:03:58Z",
   "extensions": {}
 }

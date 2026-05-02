@@ -69,12 +69,12 @@ Every file in the submission packet is enumerated in `PUBLIC_ARCHIVE_FILESET.txt
 
 AIIR canonical public surface: `https://github.com/invariant-systems-ai/aiir`
 
-Public evidence-commitment surface:
+Public evidence-log surface:
 
-- repository: [invariant-systems-ai/evidence-commitments](https://github.com/invariant-systems-ai/evidence-commitments)
-- campaign entry: [commitments/nisq-readiness-2026-05-02](https://github.com/invariant-systems-ai/evidence-commitments/tree/main/commitments/nisq-readiness-2026-05-02)
-- machine-readable commitment manifest: [COMMITMENT.json](https://github.com/invariant-systems-ai/evidence-commitments/blob/main/commitments/nisq-readiness-2026-05-02/COMMITMENT.json)
-- AIIR receipt manifest: [aiir/BUNDLESET.json](https://github.com/invariant-systems-ai/evidence-commitments/blob/main/commitments/nisq-readiness-2026-05-02/aiir/BUNDLESET.json)
+- repository: [invariant-systems-ai/research-evidence-log](https://github.com/invariant-systems-ai/research-evidence-log)
+- campaign entry: [commitments/nisq-benchmarking-evidence-2026-05-02](https://github.com/invariant-systems-ai/research-evidence-log/tree/main/commitments/nisq-benchmarking-evidence-2026-05-02)
+- machine-readable commitment manifest: [COMMITMENT.json](https://github.com/invariant-systems-ai/research-evidence-log/blob/main/commitments/nisq-benchmarking-evidence-2026-05-02/COMMITMENT.json)
+- AIIR receipt manifest: [aiir/BUNDLESET.json](https://github.com/invariant-systems-ai/research-evidence-log/blob/main/commitments/nisq-benchmarking-evidence-2026-05-02/aiir/BUNDLESET.json)
 
 That public repository is the chronology and receipt companion for this campaign:
 it records the post-study public commitment entry, mirrors the latest published

@@ -13,16 +13,16 @@
     {
       "type": "file",
       "ref": "README.md",
-      "digest": "sha256:e21faec385d5f30e1267105ac5d57754c75aa8bc2d72202911f5f455e599b967",
+      "digest": "sha256:0c38dfe35178aa790dc7018ff59d0a05c51c33f94ffd369fc555cf6fa7f1ef7e",
       "role": "artifact",
-      "size": 2789
+      "size": 2897
     },
     {
       "type": "file",
       "ref": "COMMITMENT.json",
-      "digest": "sha256:6d71314011f2891e1284626c5776a7e21aa81c62568cf609f8fea6b853345bae",
+      "digest": "sha256:e347cc0a9f8378f3dcb547e20b033641f9050ecc6a189a822fdc1003dc4c31e6",
       "role": "artifact",
-      "size": 6631
+      "size": 6763
     },
     {
       "type": "file",
@@ -61,12 +61,12 @@
     }
   ],
   "provenance": {
-    "repository": "https://github.com/invariant-systems-ai/evidence-commitments.git",
+    "repository": "https://github.com/invariant-systems-ai/research-evidence-log.git",
     "tool": "https://github.com/invariant-systems-ai/aiir@1.5.1",
     "generator": "aiir.cli"
   },
-  "receipt_id": "c1-2ab8f9ae5fdf0ed80d764d21bf763cb5",
-  "content_hash": "sha256:2ab8f9ae5fdf0ed80d764d21bf763cb5bbe00d831a3dc8ab9b8afc2c655849a4",
-  "timestamp": "2026-05-02T19:30:00Z",
+  "receipt_id": "c1-e4d1ae292e00b6aacdba9fa4425b4f37",
+  "content_hash": "sha256:e4d1ae292e00b6aacdba9fa4425b4f37579f8c6f13de8e068a75843d0c08b21e",
+  "timestamp": "2026-05-02T21:03:54Z",
   "extensions": {}
 }
