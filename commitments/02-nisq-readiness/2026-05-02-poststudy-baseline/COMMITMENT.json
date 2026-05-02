@@ -33,6 +33,17 @@
     "concept_doi": "10.5281/zenodo.19954163",
     "published_tarball_sha256": "e5511fbf5cafbe9fce809f9b9820d27027852430e4e8f1feee6bfaad2b219d67"
   },
+  "paper_reference": {
+    "title": "An Evidence-First Reproducibility Capsule for NISQ Benchmarking",
+    "manuscript_pdf_path": "capsule/nisq_readiness.pdf",
+    "manuscript_source_path": "capsule/nisq_readiness.tex",
+    "capsule_readme_path": "capsule/README.md",
+    "claims_path": "capsule/CLAIMS_AND_NONCLAIMS.md",
+    "public_summary_path": "capsule/PUBLIC_SUMMARY.md",
+    "record_url": "https://zenodo.org/records/19960217",
+    "version_doi": "10.5281/zenodo.19960217",
+    "note": "The public paper-facing evidence packet is mirrored verbatim under `capsule/`; chronology commentary and receipt material stay outside the mirror."
+  },
   "artifacts": [
     {
       "role": "author_declared_evaluation_plan",
