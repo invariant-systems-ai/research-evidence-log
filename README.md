@@ -20,6 +20,18 @@ Current contents:
 - [commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/](commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/README.md) mirrors the exact 82-file published public capsule allowlist and validates it against the shipped `checksums.sha256`
 - [commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/aiir/](commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/aiir/BUNDLESET.json) adds AIIR-native commitment receipts and CBOR sidecars for the full capsule mirror, the minimal chronology packet, and the published Zenodo tarball digest
 
+Featured campaign:
+
+The current public release is the NISQ-readiness paper bundle, *An Evidence-First
+Reproducibility Capsule for NISQ Benchmarking*. The campaign entry combines four
+review surfaces in one place: the paper-facing 82-file capsule mirror, the copied
+public plan and checksum sidecars, AIIR-native receipt bundles with Sigstore and
+Rekor transparency material, and direct links to the current Zenodo release. Read
+it as the public release note for the paper rather than only as a chronology log:
+start with the [campaign README](commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/README.md),
+then open the [paper capsule](commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/README.md)
+or the [manuscript PDF](commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/nisq_readiness.pdf).
+
 Paper linkage for the current NISQ campaign:
 
 - paper title: `An Evidence-First Reproducibility Capsule for NISQ Benchmarking`
