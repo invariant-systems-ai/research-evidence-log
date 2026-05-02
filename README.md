@@ -16,18 +16,18 @@ Claim boundary:
 
 Current contents:
 
-- `commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/` records a post-study public commitment for the NISQ-readiness evaluation-plan surface and the released Zenodo evidence package
-- `commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/` mirrors the exact 82-file published public capsule allowlist and validates it against the shipped `checksums.sha256`
-- `commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/aiir/` adds AIIR-native commitment receipts and CBOR sidecars for the full capsule mirror, the minimal chronology packet, and the published Zenodo tarball digest
+- [commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/](commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/README.md) records a post-study public commitment for the NISQ-readiness evaluation-plan surface and the released Zenodo evidence package
+- [commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/](commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/README.md) mirrors the exact 82-file published public capsule allowlist and validates it against the shipped `checksums.sha256`
+- [commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/aiir/](commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/aiir/BUNDLESET.json) adds AIIR-native commitment receipts and CBOR sidecars for the full capsule mirror, the minimal chronology packet, and the published Zenodo tarball digest
 
 Paper linkage for the current NISQ campaign:
 
 - paper title: `An Evidence-First Reproducibility Capsule for NISQ Benchmarking`
-- manuscript PDF: `commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/nisq_readiness.pdf`
-- manuscript source: `commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/nisq_readiness.tex`
-- paper-facing capsule README: `commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/README.md`
-- current public Zenodo record: `https://zenodo.org/records/19960217`
-- current public Zenodo version DOI: `10.5281/zenodo.19960217`
+- manuscript PDF: [commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/nisq_readiness.pdf](commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/nisq_readiness.pdf)
+- manuscript source: [commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/nisq_readiness.tex](commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/nisq_readiness.tex)
+- paper-facing capsule README: [commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/README.md](commitments/02-nisq-readiness/2026-05-02-poststudy-baseline/capsule/README.md)
+- current public Zenodo record: [https://zenodo.org/records/19960217](https://zenodo.org/records/19960217)
+- current public Zenodo version DOI: [10.5281/zenodo.19960217](https://doi.org/10.5281/zenodo.19960217)
 
 Planned steady-state workflow for new campaigns:
 

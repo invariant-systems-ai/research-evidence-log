@@ -28,13 +28,13 @@ This entry now has three parallel surfaces:
 This public commitment is explicitly tied to the paper bundle for:
 
 - title: `An Evidence-First Reproducibility Capsule for NISQ Benchmarking`
-- manuscript PDF: `capsule/nisq_readiness.pdf`
-- manuscript source: `capsule/nisq_readiness.tex`
-- paper-facing capsule README: `capsule/README.md`
-- claim boundary: `capsule/CLAIMS_AND_NONCLAIMS.md`
-- public summary: `capsule/PUBLIC_SUMMARY.md`
-- current public Zenodo record: `https://zenodo.org/records/19960217`
-- current public Zenodo version DOI: `10.5281/zenodo.19960217`
+- manuscript PDF: [capsule/nisq_readiness.pdf](capsule/nisq_readiness.pdf)
+- manuscript source: [capsule/nisq_readiness.tex](capsule/nisq_readiness.tex)
+- paper-facing capsule README: [capsule/README.md](capsule/README.md)
+- claim boundary: [capsule/CLAIMS_AND_NONCLAIMS.md](capsule/CLAIMS_AND_NONCLAIMS.md)
+- public summary: [capsule/PUBLIC_SUMMARY.md](capsule/PUBLIC_SUMMARY.md)
+- current public Zenodo record: [https://zenodo.org/records/19960217](https://zenodo.org/records/19960217)
+- current public Zenodo version DOI: [10.5281/zenodo.19960217](https://doi.org/10.5281/zenodo.19960217)
 
 The `capsule/` directory is the primary paper-referenceable sidecar packet in
 this repository. It is kept verbatim with respect to the published allowlist,
