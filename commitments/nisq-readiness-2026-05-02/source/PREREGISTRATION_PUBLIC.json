@@ -92,7 +92,7 @@
 
   "independent_timestamp": {
     "osf_doi": "NOT_AVAILABLE",
-    "note": "This file records an author-declared pre-execution plan dated 2026-02-01. It was not independently timestamped by OSF before execution. Zenodo DOI 10.5281/zenodo.19954164 for the reconciled release is a public release timestamp, not a pre-execution registry timestamp; journal-facing language should describe this surface as a predeclared plan unless an independent pre-run timestamp is later supplied.",
+    "note": "This file records an author-declared pre-execution plan dated 2026-02-01. It was not independently timestamped by OSF before execution. Zenodo concept DOI 10.5281/zenodo.19954163 identifies the public release series, and current version DOI 10.5281/zenodo.19985231 should be treated as a public release timestamp rather than a pre-execution registry timestamp; journal-facing language should describe this surface as a predeclared plan unless an independent pre-run timestamp is later supplied.",
     "arxiv_ancillary_timestamp": "NOT_AVAILABLE"
   },
 

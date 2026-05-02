@@ -1,6 +1,6 @@
-# NISQ Readiness Post-Study Baseline
+# NISQ Readiness Evidence Companion
 
-This directory records a public post-study commitment for the NISQ-readiness campaign.
+This directory records the public evidence companion for the NISQ-readiness paper at a clean, paper-aligned campaign path.
 
 What this entry does:
 
@@ -33,8 +33,8 @@ This public commitment is explicitly tied to the paper bundle for:
 - paper-facing capsule README: [capsule/README.md](capsule/README.md)
 - claim boundary: [capsule/CLAIMS_AND_NONCLAIMS.md](capsule/CLAIMS_AND_NONCLAIMS.md)
 - public summary: [capsule/PUBLIC_SUMMARY.md](capsule/PUBLIC_SUMMARY.md)
-- current public Zenodo record: [https://zenodo.org/records/19960217](https://zenodo.org/records/19960217)
-- current public Zenodo version DOI: [10.5281/zenodo.19960217](https://doi.org/10.5281/zenodo.19960217)
+- current public Zenodo record: [https://zenodo.org/records/19985231](https://zenodo.org/records/19985231)
+- current public Zenodo version DOI: [10.5281/zenodo.19985231](https://doi.org/10.5281/zenodo.19985231)
 
 The `capsule/` directory is the primary paper-referenceable sidecar packet in
 this repository. It is kept verbatim with respect to the published allowlist,
@@ -42,5 +42,5 @@ while this outer directory carries chronology notes, commitment metadata, and
 AIIR receipt material.
 
 The machine-readable manifests for this entry are `COMMITMENT.json` and `aiir/BUNDLESET.json`.
-The primary paper-referenceable sidecar surface is `capsule/`, with its integrity bound by `aiir/receipts/receipt_nisq-public-evidence-cap_a25683519087f75a.json`.
+The primary paper-referenceable sidecar surface is `capsule/`, with its integrity bound by the `public-capsule-mirror` receipt recorded in `aiir/BUNDLESET.json`.
 Exact receipt filenames, per-artifact hashes, signer policy, and Rekor entry details are recorded in `aiir/BUNDLESET.json`.

@@ -11,7 +11,7 @@ scripts supporting the public evidence capsule (v1.0 and v1.1).
 
 Scope reconciliation: `PREREGISTRATION_PUBLIC.json` intentionally preserves the historical v1.1 S1 target of 30 workload kinds / 180 expected runs. The completed public bundle reports the reconciled execution scope below: 156 declared S1 manifest runs / 26 workload kinds, 168 S1 offline distributions / 28 workload kinds, and 40 S2 confirmatory runs. See `../SCOPE_RECONCILIATION.md` for the release-level rationale.
 
-Timestamp reconciliation: `PREREGISTRATION_PUBLIC.json` is retained as a historical author-declared evaluation surface. It was not independently timestamped through OSF before execution. Zenodo DOI `10.5281/zenodo.19954164` should be treated as the frozen public release identifier for the reconciled evidence package, not as an independent pre-execution registry timestamp.
+Timestamp reconciliation: `PREREGISTRATION_PUBLIC.json` is retained as a historical author-declared evaluation surface. It was not independently timestamped through OSF before execution. Zenodo concept DOI `10.5281/zenodo.19954163` identifies the public release series, and the current version DOI `10.5281/zenodo.19985231` should be treated as a public release timestamp rather than an independent pre-execution registry timestamp.
 
 - **24_EXECUTION_ORDER_AND_TIMESTAMP_POSTURE_20260501.md** — timestamp-boundary note distinguishing author-declared plan dating from later IBM/AWS execution evidence.
 

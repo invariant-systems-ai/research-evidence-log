@@ -8,7 +8,7 @@ The capsule binds logical OpenQASM workload files to SHA256 content hashes, reco
 
 A bundled companion note records completed AWS Braket IQM Garnet hardware confirmations for four published workloads at 256 and 4096 shots, and a bundled machine-readable provider-facts JSON records provider-side timestamps and hash fields for all 8 AWS confirmation tasks. That supports a narrow two-provider-surface real-hardware claim for the evidence contract; it is not used to update the IBM cross-backend statistics and does not make this a matched multi-vendor statistical study. Azure simulator submissions are excluded from the real-hardware claim.
 
-Frozen public archive DOI: `10.5281/zenodo.19954164`.
+Current Zenodo version DOI: `10.5281/zenodo.19985231`. Concept DOI for the release series: `10.5281/zenodo.19954163`.
 
 ## Headline Result
 

@@ -1,8 +1,8 @@
 # An Evidence-First Reproducibility Capsule for NISQ Benchmarking
 
-Canonical capsule date: 2026-05-01
+Canonical capsule prep date: 2026-05-02
 
-This directory is the publication-facing evidence capsule archived at Zenodo DOI `10.5281/zenodo.19954164` and prepared for external review and journal submission. It contains the public manuscript bundle, ancillary data, verifier scripts, workload definitions, figures, and release wrapper needed for an outside reviewer to inspect and replay the claim boundary.
+This directory is the publication-facing evidence capsule released under Zenodo version DOI `10.5281/zenodo.19985231` within the release series identified by concept DOI `10.5281/zenodo.19954163`, and organized for external review and journal submission. It contains the public manuscript bundle, ancillary data, verifier scripts, workload definitions, figures, and release wrapper needed for an outside reviewer to inspect and replay the claim boundary.
 
 The public capsule and companion receipt surfaces were assembled with AIIR, the open-source receipt and reproducibility tool used in the broader project to emit reviewer-facing evidence bundles. Reviewers do not need AIIR to verify this paper; the exported capsule is the canonical public audit object.
 
@@ -63,14 +63,26 @@ The contribution is a reviewer-auditable evidence contract and an IBM empirical 
 
 The published Zenodo archive is intentionally narrower than this working directory. It is built from `PUBLIC_ARCHIVE_FILESET.txt` and contains only the manuscript bundle, figures, public ancillary data, public summary JSON, reproducibility scripts, workload definitions, and reviewer-facing wrapper notes needed to read and replay the result.
 
-Every file in the submission packet is enumerated in `PUBLIC_ARCHIVE_FILESET.txt`, recorded in `checksums.sha256`, and included in the tarball only through that allowlist. If a file is not named in `PUBLIC_ARCHIVE_FILESET.txt`, it is not part of the public submission packet.
+Every file in the submission packet is enumerated in `PUBLIC_ARCHIVE_FILESET.txt` and included in the tarball only through that allowlist. The checksum manifest `checksums.sha256` records the allowlisted payload files other than the manifest itself, so `sha256sum -c checksums.sha256` succeeds directly from the unpacked capsule root. If a file is not named in `PUBLIC_ARCHIVE_FILESET.txt`, it is not part of the public submission packet.
 
 ## Implementation Note
 
 AIIR canonical public surface: `https://github.com/invariant-systems-ai/aiir`
 
+Public evidence-commitment surface:
+
+- repository: [invariant-systems-ai/evidence-commitments](https://github.com/invariant-systems-ai/evidence-commitments)
+- campaign entry: [commitments/nisq-readiness-2026-05-02](https://github.com/invariant-systems-ai/evidence-commitments/tree/main/commitments/nisq-readiness-2026-05-02)
+- machine-readable commitment manifest: [COMMITMENT.json](https://github.com/invariant-systems-ai/evidence-commitments/blob/main/commitments/nisq-readiness-2026-05-02/COMMITMENT.json)
+- AIIR receipt manifest: [aiir/BUNDLESET.json](https://github.com/invariant-systems-ai/evidence-commitments/blob/main/commitments/nisq-readiness-2026-05-02/aiir/BUNDLESET.json)
+
+That public repository is the chronology and receipt companion for this campaign:
+it records the post-study public commitment entry, mirrors the latest published
+paper-facing capsule, and carries the AIIR receipt bundles and Sigstore/Rekor
+transparency material for the released packet.
+
 For this paper, AIIR is the public implementation layer used to package the capsule and receipt surfaces. The scientific claim remains the exported evidence bundle and its replayability, not any private substrate behind the broader project.
 
 ## Zenodo Status
 
-This capsule is archived for public release at Zenodo DOI `10.5281/zenodo.19954164` using the release-local license map in `LICENSE_RELEASE.md`. The license map applies to this publication capsule and the files listed in the public archive allowlist.
+This capsule is published under Zenodo version DOI `10.5281/zenodo.19985231` within the release series identified by concept DOI `10.5281/zenodo.19954163`, using the release-local license map in `LICENSE_RELEASE.md`. Packet-facing citation surfaces in this directory now point to the current version DOI, while the concept DOI remains the stable identifier for the overall release series. The license map applies to this publication capsule and the files listed in the public archive allowlist.

@@ -1,0 +1,29 @@
+{
+  "type": "aiir.commitment_receipt",
+  "schema": "aiir/commitment_receipt.v1",
+  "version": "1.5.1",
+  "subject": {
+    "name": "nisq-zenodo-v2026-05-02",
+    "kind": "release_digest_binding"
+  },
+  "statement": {
+    "summary": "Published Zenodo tarball digest for the 2026-05-02 NISQ evidence capsule."
+  },
+  "artifacts": [
+    {
+      "type": "digest",
+      "ref": "nisq-zenodo-release",
+      "digest": "sha256:e49279b120a9e2a7e567293addafa55e09d26161b3bc17243e550e2a6a41690c",
+      "role": "artifact"
+    }
+  ],
+  "provenance": {
+    "repository": "https://github.com/invariant-systems-ai/evidence-commitments.git",
+    "tool": "https://github.com/invariant-systems-ai/aiir@1.5.1",
+    "generator": "aiir.cli"
+  },
+  "receipt_id": "c1-83c52551b82e822e05b2e7a2051887bb",
+  "content_hash": "sha256:83c52551b82e822e05b2e7a2051887bb30d66991450d941a15b6b26192a5c56a",
+  "timestamp": "2026-05-02T19:30:04Z",
+  "extensions": {}
+}

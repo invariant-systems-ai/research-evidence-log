@@ -3,17 +3,17 @@
   "schema": "aiir/commitment_receipt.v1",
   "version": "1.5.1",
   "subject": {
-    "name": "nisq-public-evidence-capsule-mirror",
+    "name": "nisq-paper-capsule",
     "kind": "paper_public_capsule"
   },
   "statement": {
-    "summary": "Mirror of the full published NISQ public evidence capsule allowlist, verified against the shipped checksums.sha256 and intended for direct paper citation."
+    "summary": "Paper-facing public capsule mirror for the NISQ evidence companion."
   },
   "artifacts": [
     {
       "type": "directory",
       "ref": "capsule",
-      "digest": "sha256:c115f54b327d809e0fdd88405554f2e4eb381c373dbac145ff09411ad58a6da6",
+      "digest": "sha256:ff65fa7a697d9947b31930cfa20cf9dcbda47c7a4ac6e03fad0c9200edbc481e",
       "role": "artifact",
       "entry_count": 84,
       "file_count": 82,
@@ -21,8 +21,8 @@
         {
           "path": "CITATION.cff",
           "type": "file",
-          "digest": "sha256:e1359bdd78a71c92a2c6afe54b03a0b26bacb16b1c05f3fc03b8622c39fb1834",
-          "size": 958
+          "digest": "sha256:8c3b9f206a692bab93856ec4c31b703912f01a393d54c646d049b48a8f25a626",
+          "size": 951
         },
         {
           "path": "CLAIMS_AND_NONCLAIMS.md",
@@ -51,14 +51,14 @@
         {
           "path": "PUBLIC_SUMMARY.md",
           "type": "file",
-          "digest": "sha256:b4917635cd4419c1f30cc6dfff651a1ba4ad7af3a48f13a4fa7cb3dff779b0f5",
-          "size": 3073
+          "digest": "sha256:1a9b75c15deb1c1491f561595714567030512619552672d4fc0a308eeea31538",
+          "size": 3137
         },
         {
           "path": "README.md",
           "type": "file",
-          "digest": "sha256:78a53c465be6743c2e78cf0e9421ac7c4c97a2a6412abde33f60f105b62d6b92",
-          "size": 6240
+          "digest": "sha256:917d611f61c863c8c77533ebdb800c67b2176cb6b83aa36ab68bcbfc302d07bc",
+          "size": 7718
         },
         {
           "path": "REPRODUCE.md",
@@ -163,14 +163,14 @@
         {
           "path": "anc/PREREGISTRATION_PUBLIC.json",
           "type": "file",
-          "digest": "sha256:b4114a0ea524204bb08c36759a58c5b3448a06d7a21507a1b67c2d2e8a3ba870",
-          "size": 5820
+          "digest": "sha256:05be3ddc0e2643603440881dccc85e185ef24338372eda1e3f8ce365a5eabde4",
+          "size": 5912
         },
         {
           "path": "anc/README.md",
           "type": "file",
-          "digest": "sha256:a01cb1752c903ab7fc9c4ff9bd38938f89adf18ae1fa246ee8a945dfceb97e55",
-          "size": 5676
+          "digest": "sha256:24b7e0406de370c7546b54f419923643f420c0327de11960331248736058cc56",
+          "size": 5734
         },
         {
           "path": "anc/bootstrap_ci.py",
@@ -415,7 +415,7 @@
         {
           "path": "checksums.sha256",
           "type": "file",
-          "digest": "sha256:444bbb50a79343b4e796d7d98ffe66530b185b5f66e70e95b8ae9ed8004df1e2",
+          "digest": "sha256:ed246f134e5567356120fd997f14f33e7dfedd480a37c7c4b05e9d415dcb8a24",
           "size": 7562
         },
         {
@@ -463,14 +463,14 @@
         {
           "path": "nisq_readiness.pdf",
           "type": "file",
-          "digest": "sha256:534702f63d404e437d077d633a1eba7a8f0943e96a19e5d1a7980c3d964e745a",
-          "size": 579043
+          "digest": "sha256:f13c7953ded04a56100ac6b87ef3ef39270a71b45dbc9282f39c123939c0bba0",
+          "size": 579386
         },
         {
           "path": "nisq_readiness.tex",
           "type": "file",
-          "digest": "sha256:117cfa000dc066c6eb5c6db484e822a7fde4fdd504b0140e397aa6a12064459c",
-          "size": 70836
+          "digest": "sha256:fe743a9f0a91f77dac7cedf920734113bc9b6a74d48319c389aceb7fb1147b63",
+          "size": 71773
         },
         {
           "path": "nisq_readinessNotes.bib",
@@ -526,10 +526,8 @@
     "tool": "https://github.com/invariant-systems-ai/aiir@1.5.1",
     "generator": "aiir.cli"
   },
-  "receipt_id": "c1-83519087f75ad9c1237fdf5c25592bf3",
-  "content_hash": "sha256:83519087f75ad9c1237fdf5c25592bf3ab4d389ee00fdac700ba05dbe47d3e4a",
-  "timestamp": "2026-05-02T11:38:49Z",
-  "extensions": {
-    "namespace": "02-nisq-readiness"
-  }
+  "receipt_id": "c1-82f4d312b558fd71b6c16bdddc99c5c2",
+  "content_hash": "sha256:82f4d312b558fd71b6c16bdddc99c5c2b6af226c8b2e52976db2224a49fcdc92",
+  "timestamp": "2026-05-02T19:27:51Z",
+  "extensions": {}
 }

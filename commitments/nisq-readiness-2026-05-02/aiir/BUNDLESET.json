@@ -1,11 +1,11 @@
 {
   "schema": "invariant-systems/aiir_bundle_set.v1",
-  "bundle_set_id": "02-nisq-readiness-2026-05-02-poststudy-baseline-aiir",
-  "generated_at_utc": "2026-05-02T12:56:32Z",
+  "bundle_set_id": "nisq-readiness-2026-05-02-aiir",
+  "generated_at_utc": "2026-05-02T19:30:08Z",
   "paper_reference_bundle_id": "public-capsule-mirror",
   "campaign": {
     "program_id": "02-nisq-readiness",
-    "commitment_id": "02-nisq-readiness-2026-05-02-poststudy-baseline"
+    "commitment_id": "nisq-readiness-2026-05-02"
   },
   "generator": {
     "tool": "AIIR",
@@ -17,7 +17,7 @@
   },
   "verification": {
     "hash_manifest_path": "aiir/SHA256SUMS",
-    "hash_manifest_sha256": "sha256:b69064d15e5115344c7035e2206211ef88f6dcdeab2542885009b021b8e250d0",
+    "hash_manifest_sha256": "sha256:4c5971bdd1e4dc62c796d008127157c764e9adc7d4742a256a5ad7cb4eb7012d",
     "local_json_and_cbor_verification": "passed",
     "published_checksum_validation": {
       "path": "capsule/checksums.sha256",
@@ -35,24 +35,24 @@
   "bundles": [
     {
       "bundle_id": "public-capsule-mirror",
-      "subject_name": "nisq-public-evidence-capsule-mirror",
+      "subject_name": "nisq-paper-capsule",
       "subject_kind": "paper_public_capsule",
-      "receipt_id": "c1-83519087f75ad9c1237fdf5c25592bf3",
-      "content_hash": "sha256:83519087f75ad9c1237fdf5c25592bf3ab4d389ee00fdac700ba05dbe47d3e4a",
+      "receipt_id": "c1-82f4d312b558fd71b6c16bdddc99c5c2",
+      "content_hash": "sha256:82f4d312b558fd71b6c16bdddc99c5c2b6af226c8b2e52976db2224a49fcdc92",
       "receipt_json": {
-        "path": "aiir/receipts/receipt_nisq-public-evidence-cap_a25683519087f75a.json",
-        "sha256": "5861fa648fe71c1dfa5a33c4e442689068ccb68d22a17189636207a5b5c8adf6",
-        "size_bytes": 18765
+        "path": "aiir/receipts/receipt_nisq-paper-capsule_a25682f4d312b558.json",
+        "sha256": "8f324f26cbc6efe6253ff04b1fa071f0bc6c0bac72dd7ad232f6dffb287b9cb5",
+        "size_bytes": 18621
       },
       "receipt_cbor": {
-        "path": "aiir/receipts/receipt_nisq-public-evidence-cap_a25683519087f75a.cbor",
-        "sha256": "4cc744f4b85638e836a442fcde70775f834db4d39b7eaf3331454358a65c8dad",
-        "size_bytes": 11671
+        "path": "aiir/receipts/receipt_nisq-paper-capsule_a25682f4d312b558.cbor",
+        "sha256": "2561f09a08ffd607263dea703409130c7770ff7a704fd5c7c08843bb3a68e6ce",
+        "size_bytes": 11566
       },
       "sigstore_bundle": {
-        "path": "aiir/receipts/receipt_nisq-public-evidence-cap_a25683519087f75a.json.sigstore",
-        "sha256": "80aabce6f5b5624e4be864a6a222d00e70f55d6879cd17ebb80bb354b71e2c9c",
-        "size_bytes": 6801,
+        "path": "aiir/receipts/receipt_nisq-paper-capsule_a25682f4d312b558.json.sigstore",
+        "sha256": "cb577d99a708a821b1fdc2499dffdde320e3f2e2f39398d1c43dc21792ea7aec",
+        "size_bytes": 6796,
         "verification": {
           "status": "passed",
           "policy": "identity",
@@ -61,16 +61,16 @@
         },
         "bundle": {
           "media_type": "application/vnd.dev.sigstore.bundle.v0.3+json",
-          "certificate_sha256": "sha256:948d773a8066b5c1710816794fc45e6b1ce9e3c9dd7b14ca8f4218edb1f3723b",
+          "certificate_sha256": "sha256:2d039ac9c4cb72092e19c444c324183b2337e602a7a9f2abac1ae365500d580d",
           "tlog_entry_count": 1,
           "rfc3161_timestamp_count": 1,
           "entries": [
             {
               "kind": "hashedrekord",
-              "log_index": "1429021050",
+              "log_index": "1429549332",
               "log_id": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0=",
-              "integrated_time": "1777723217",
-              "integrated_time_rfc3339": "2026-05-02T12:00:17Z",
+              "integrated_time": "1777750199",
+              "integrated_time_rfc3339": "2026-05-02T19:29:59Z",
               "has_signed_entry_timestamp": true,
               "has_checkpoint": true
             }
@@ -81,7 +81,7 @@
         {
           "path": "capsule",
           "type": "directory",
-          "digest": "sha256:c115f54b327d809e0fdd88405554f2e4eb381c373dbac145ff09411ad58a6da6",
+          "digest": "sha256:ff65fa7a697d9947b31930cfa20cf9dcbda47c7a4ac6e03fad0c9200edbc481e",
           "entry_count": 84,
           "file_count": 82,
           "ancillary_file_count": 55,
@@ -93,25 +93,25 @@
       ]
     },
     {
-      "bundle_id": "poststudy-public-packet",
-      "subject_name": "nisq-poststudy-baseline-public-packet",
+      "bundle_id": "paper-sidecar-packet",
+      "subject_name": "nisq-paper-sidecar",
       "subject_kind": "paper_sidecar_packet",
-      "receipt_id": "c1-aed808e54ca3be3286bb15d3875cd70d",
-      "content_hash": "sha256:aed808e54ca3be3286bb15d3875cd70d3d9b90ae68b54a6e81eb5255c3860769",
+      "receipt_id": "c1-2ab8f9ae5fdf0ed80d764d21bf763cb5",
+      "content_hash": "sha256:2ab8f9ae5fdf0ed80d764d21bf763cb5bbe00d831a3dc8ab9b8afc2c655849a4",
       "receipt_json": {
-        "path": "aiir/receipts/receipt_nisq-poststudy-baseline-_a256aed808e54ca3.json",
-        "sha256": "a0d569ca94e4237ff3ba67e63a11fdaaeb45f205c51ae19d053ae55364af12c7",
-        "size_bytes": 2419
+        "path": "aiir/receipts/receipt_nisq-paper-sidecar_a2562ab8f9ae5fdf.json",
+        "sha256": "3c12fbc62ded62fd6ed073fbf342e6079d4eebcd52914153b11e7909094b2745",
+        "size_bytes": 2351
       },
       "receipt_cbor": {
-        "path": "aiir/receipts/receipt_nisq-poststudy-baseline-_a256aed808e54ca3.cbor",
-        "sha256": "00009fd0312f5598a826ea2e65873f9c67ca1b2b3c5d68469a09823153ec3bf4",
-        "size_bytes": 1644
+        "path": "aiir/receipts/receipt_nisq-paper-sidecar_a2562ab8f9ae5fdf.cbor",
+        "sha256": "aad7da7c2a64a5711c643ad4dbfe4e9da721ecada997610f24b0364c901d3cd9",
+        "size_bytes": 1615
       },
       "sigstore_bundle": {
-        "path": "aiir/receipts/receipt_nisq-poststudy-baseline-_a256aed808e54ca3.json.sigstore",
-        "sha256": "23cfa6ec5bc3dd2d90dc18d9cf0ce65bcb6b4c9db56eaee53ad71cb31c760dde",
-        "size_bytes": 7165,
+        "path": "aiir/receipts/receipt_nisq-paper-sidecar_a2562ab8f9ae5fdf.json.sigstore",
+        "sha256": "c3563b901f7c826b46b10a548be5d6ea23beb6728a4b2a791fd99287036c0865",
+        "size_bytes": 6812,
         "verification": {
           "status": "passed",
           "policy": "identity",
@@ -120,16 +120,16 @@
         },
         "bundle": {
           "media_type": "application/vnd.dev.sigstore.bundle.v0.3+json",
-          "certificate_sha256": "sha256:d019c1bd41a5335ad7a9dee7b404cfea35705cafd53b914e3964265aaafd3dd8",
+          "certificate_sha256": "sha256:f4b8d5b34feb64e194c924c0dbb597c0dc16b26065e17e8634c00a966a9653d6",
           "tlog_entry_count": 1,
           "rfc3161_timestamp_count": 1,
           "entries": [
             {
               "kind": "hashedrekord",
-              "log_index": "1429082977",
+              "log_index": "1429549343",
               "log_id": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0=",
-              "integrated_time": "1777726548",
-              "integrated_time_rfc3339": "2026-05-02T12:55:48Z",
+              "integrated_time": "1777750204",
+              "integrated_time_rfc3339": "2026-05-02T19:30:04Z",
               "has_signed_entry_timestamp": true,
               "has_checkpoint": true
             }
@@ -140,22 +140,22 @@
         {
           "path": "README.md",
           "type": "file",
-          "digest": "sha256:c53f944f1a67f7660442bae2d496c0f82a138e132cdcd9c1601b3f84dbfd91c0"
+          "digest": "sha256:e21faec385d5f30e1267105ac5d57754c75aa8bc2d72202911f5f455e599b967"
         },
         {
           "path": "COMMITMENT.json",
           "type": "file",
-          "digest": "sha256:4027b88155adb45d5df0286742ec59bd9809190bcbdcdd0a9d84123353e97c4c"
+          "digest": "sha256:6d71314011f2891e1284626c5776a7e21aa81c62568cf609f8fea6b853345bae"
         },
         {
           "path": "SHA256SUMS",
           "type": "file",
-          "digest": "sha256:6d529953ab3310ea2502b56095fed37fa8d029b2a908654ce76db9918fa639eb"
+          "digest": "sha256:d55915e6673076693aa18b949267e6e75a5b928a95da431893bf6f011b00f007"
         },
         {
           "path": "source",
           "type": "directory",
-          "digest": "sha256:2cc027fb3662854dd395f2cfa98967bc370f023cbc9c521cb7a74c16bba14905",
+          "digest": "sha256:b0256c7fbc59bc813d47972af5eae2d27e321fd8290b5650f2121056b2feeb35",
           "entry_count": 3,
           "file_count": 3,
           "members": [
@@ -167,12 +167,12 @@
             {
               "path": "source/PREREGISTRATION_PUBLIC.json",
               "type": "file",
-              "digest": "sha256:b4114a0ea524204bb08c36759a58c5b3448a06d7a21507a1b67c2d2e8a3ba870"
+              "digest": "sha256:05be3ddc0e2643603440881dccc85e185ef24338372eda1e3f8ce365a5eabde4"
             },
             {
-              "path": "source/nisq-readiness-evidence-capsule-v2026.05.01-zenodo.tar.gz.sha256",
+              "path": "source/nisq-readiness-evidence-capsule-v2026.05.02-zenodo.tar.gz.sha256",
               "type": "file",
-              "digest": "sha256:869af33a43d459708cacf149a7e624487746c9137c36889ae21021b465cba279"
+              "digest": "sha256:07cf6ad56b41b47e87343c25b9bbdf818fdc76e519499e5a27388028eddddb66"
             }
           ]
         }
@@ -180,24 +180,24 @@
     },
     {
       "bundle_id": "zenodo-release-digest",
-      "subject_name": "nisq-zenodo-release-packet-digest",
+      "subject_name": "nisq-zenodo-v2026-05-02",
       "subject_kind": "release_digest_binding",
-      "receipt_id": "c1-d471841487c192f5eff89b8dd5ff79a2",
-      "content_hash": "sha256:d471841487c192f5eff89b8dd5ff79a20a161dbb7a60ed7ce6bbf24db552b56e",
+      "receipt_id": "c1-83c52551b82e822e05b2e7a2051887bb",
+      "content_hash": "sha256:83c52551b82e822e05b2e7a2051887bb30d66991450d941a15b6b26192a5c56a",
       "receipt_json": {
-        "path": "aiir/receipts/receipt_nisq-zenodo-release-pack_a256d471841487c1.json",
-        "sha256": "472dc76b9d567ae31599447973a40c5a2e87850ebbfc985eabbf1b1ac06fbd14",
-        "size_bytes": 1059
+        "path": "aiir/receipts/receipt_nisq-zenodo-v2026-05-02_a25683c52551b82e.json",
+        "sha256": "febe81da5dab3c087acb96e14cd19beb9dbc59d97726cdc5d5c20aa2b98bc2d1",
+        "size_bytes": 933
       },
       "receipt_cbor": {
-        "path": "aiir/receipts/receipt_nisq-zenodo-release-pack_a256d471841487c1.cbor",
-        "sha256": "59e2a106641133c2399dd0a3f78a1a1ead2a6f341535d06ab547f4b5105ebdbd",
-        "size_bytes": 777
+        "path": "aiir/receipts/receipt_nisq-zenodo-v2026-05-02_a25683c52551b82e.cbor",
+        "sha256": "9c2e0b52d1519f529949c075b9ac110ecc854ba428bb59c5f445d80e8dbdc8ad",
+        "size_bytes": 689
       },
       "sigstore_bundle": {
-        "path": "aiir/receipts/receipt_nisq-zenodo-release-pack_a256d471841487c1.json.sigstore",
-        "sha256": "a8af11d09037c183d0e5953cb761087cf9eff1bfbda37b1e90cd245d54c0c1e2",
-        "size_bytes": 6848,
+        "path": "aiir/receipts/receipt_nisq-zenodo-v2026-05-02_a25683c52551b82e.json.sigstore",
+        "sha256": "13b1c57e597b835e8cd72edfd6a760a33a9c9146d5e22e8ab91a1565446a20e0",
+        "size_bytes": 6843,
         "verification": {
           "status": "passed",
           "policy": "identity",
@@ -206,16 +206,16 @@
         },
         "bundle": {
           "media_type": "application/vnd.dev.sigstore.bundle.v0.3+json",
-          "certificate_sha256": "sha256:796f92b0e5c435a2d0d945830650800bd3575ba4ace2eeb7978e2622bf9141c7",
+          "certificate_sha256": "sha256:e88c8e0975a972efd7fbb296951452e14b98fb97edaa115ef1c60f1d25f13c12",
           "tlog_entry_count": 1,
           "rfc3161_timestamp_count": 1,
           "entries": [
             {
               "kind": "hashedrekord",
-              "log_index": "1429022622",
+              "log_index": "1429549364",
               "log_id": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0=",
-              "integrated_time": "1777723398",
-              "integrated_time_rfc3339": "2026-05-02T12:03:18Z",
+              "integrated_time": "1777750208",
+              "integrated_time_rfc3339": "2026-05-02T19:30:08Z",
               "has_signed_entry_timestamp": true,
               "has_checkpoint": true
             }
@@ -224,9 +224,9 @@
       },
       "artifacts": [
         {
-          "path": "nisq-readiness-evidence-capsule-v2026.05.01-zenodo.tar.gz",
+          "path": "nisq-readiness-evidence-capsule-v2026.05.02-zenodo.tar.gz",
           "type": "digest",
-          "digest": "sha256:e5511fbf5cafbe9fce809f9b9820d27027852430e4e8f1feee6bfaad2b219d67"
+          "digest": "sha256:e49279b120a9e2a7e567293addafa55e09d26161b3bc17243e550e2a6a41690c"
         }
       ]
     }

@@ -1,13 +1,13 @@
 {
   "schema": "invariant-systems/public_plan_commitment.v1",
-  "commitment_id": "02-nisq-readiness-2026-05-02-poststudy-baseline",
-  "commitment_timestamp_utc": "2026-05-02T09:52:21Z",
+  "commitment_id": "nisq-readiness-2026-05-02",
+  "commitment_timestamp_utc": "2026-05-02T19:21:36Z",
   "repository_url": "https://github.com/invariant-systems-ai/evidence-commitments",
   "campaign": {
     "program_id": "02-nisq-readiness",
     "title": "An Evidence-First Reproducibility Capsule for NISQ Benchmarking",
     "declared_plan_date": "2026-02-01",
-    "commitment_kind": "post-study public chronology baseline"
+    "commitment_kind": "public paper evidence companion"
   },
   "interpretation": {
     "supports": [
@@ -24,14 +24,14 @@
   },
   "source_repository": {
     "path": "/home/kaleidos/Desktop/invariant-systems-lab/invariant-systems-research",
-    "head_commit": "39c7f132cf08c4a1deaf5d2017de999290c90889",
-    "note": "The copied source surfaces are bound by the SHA256 digests recorded below and may include local modifications beyond the recorded source-repository HEAD commit."
+    "head_commit": "c95a5fe608efd08bd63dcbabb824043666fba5f3",
+    "note": "The copied source surfaces mirror the pushed research-repo release at the recorded source-repository HEAD commit."
   },
   "zenodo": {
-    "record_url": "https://zenodo.org/records/19960217",
-    "version_doi": "10.5281/zenodo.19960217",
+    "record_url": "https://zenodo.org/records/19985231",
+    "version_doi": "10.5281/zenodo.19985231",
     "concept_doi": "10.5281/zenodo.19954163",
-    "published_tarball_sha256": "e5511fbf5cafbe9fce809f9b9820d27027852430e4e8f1feee6bfaad2b219d67"
+    "published_tarball_sha256": "e49279b120a9e2a7e567293addafa55e09d26161b3bc17243e550e2a6a41690c"
   },
   "paper_reference": {
     "title": "An Evidence-First Reproducibility Capsule for NISQ Benchmarking",
@@ -40,8 +40,8 @@
     "capsule_readme_path": "capsule/README.md",
     "claims_path": "capsule/CLAIMS_AND_NONCLAIMS.md",
     "public_summary_path": "capsule/PUBLIC_SUMMARY.md",
-    "record_url": "https://zenodo.org/records/19960217",
-    "version_doi": "10.5281/zenodo.19960217",
+    "record_url": "https://zenodo.org/records/19985231",
+    "version_doi": "10.5281/zenodo.19985231",
     "note": "The public paper-facing evidence packet is mirrored verbatim under `capsule/`; chronology commentary and receipt material stay outside the mirror."
   },
   "artifacts": [
@@ -49,7 +49,7 @@
       "role": "author_declared_evaluation_plan",
       "public_copy": "source/PREREGISTRATION_PUBLIC.json",
       "source_repo_path": "3-proof/3p-deliverable/publications/arxiv/02-nisq-readiness/anc/PREREGISTRATION_PUBLIC.json",
-      "sha256": "b4114a0ea524204bb08c36759a58c5b3448a06d7a21507a1b67c2d2e8a3ba870"
+      "sha256": "05be3ddc0e2643603440881dccc85e185ef24338372eda1e3f8ce365a5eabde4"
     },
     {
       "role": "timestamp_boundary_note",
@@ -59,10 +59,10 @@
     },
     {
       "role": "zenodo_tarball_checksum_sidecar",
-      "public_copy": "source/nisq-readiness-evidence-capsule-v2026.05.01-zenodo.tar.gz.sha256",
-      "source_repo_path": "3-proof/3p-deliverable/publications/arxiv/02-nisq-readiness/nisq-readiness-evidence-capsule-v2026.05.01-zenodo.tar.gz.sha256",
-      "sha256": "869af33a43d459708cacf149a7e624487746c9137c36889ae21021b465cba279",
-      "declared_tarball_sha256": "e5511fbf5cafbe9fce809f9b9820d27027852430e4e8f1feee6bfaad2b219d67"
+      "public_copy": "source/nisq-readiness-evidence-capsule-v2026.05.02-zenodo.tar.gz.sha256",
+      "source_repo_path": "3-proof/3p-deliverable/publications/arxiv/02-nisq-readiness/nisq-readiness-evidence-capsule-v2026.05.02-zenodo.tar.gz.sha256",
+      "sha256": "07cf6ad56b41b47e87343c25b9bbdf818fdc76e519499e5a27388028eddddb66",
+      "declared_tarball_sha256": "e49279b120a9e2a7e567293addafa55e09d26161b3bc17243e550e2a6a41690c"
     }
   ],
   "paper_reference_capsule": {
@@ -79,7 +79,7 @@
   "aiir": {
     "bundle_manifest": "aiir/BUNDLESET.json",
     "hash_manifest": "aiir/SHA256SUMS",
-    "paper_reference_bundle_subject": "nisq-public-evidence-capsule-mirror",
+    "paper_reference_bundle_subject": "nisq-paper-capsule",
     "generator": {
       "tool": "AIIR",
       "version": "1.5.1",
@@ -102,7 +102,7 @@
     },
     "bundle_ids": [
       "public-capsule-mirror",
-      "poststudy-public-packet",
+      "paper-sidecar-packet",
       "zenodo-release-digest"
     ],
     "note": "Exact receipt ids, filenames, per-artifact hashes, and Rekor entry details are recorded in aiir/BUNDLESET.json. This packet-bound manifest intentionally avoids duplicating receipt-specific coordinates so the AIIR lane stays authoritative without forcing the packet receipt to chase its own hash.",
