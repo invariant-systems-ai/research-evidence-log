@@ -19,6 +19,7 @@ Current contents:
 - [commitments/nisq-benchmarking-evidence-2026-05-02/](commitments/nisq-benchmarking-evidence-2026-05-02/README.md) records the public evidence companion for the NISQ benchmarking paper, anchored to the released Zenodo package and the paper-facing capsule mirror
 - [commitments/nisq-benchmarking-evidence-2026-05-02/capsule/](commitments/nisq-benchmarking-evidence-2026-05-02/capsule/README.md) mirrors the current 82-file paper-facing capsule and validates it against the shipped `checksums.sha256`
 - [commitments/nisq-benchmarking-evidence-2026-05-02/aiir/](commitments/nisq-benchmarking-evidence-2026-05-02/aiir/BUNDLESET.json) adds AIIR-native commitment receipts and CBOR sidecars for the full capsule mirror, the minimal chronology packet, and the published Zenodo tarball digest
+  - note (2026-09-23): the tool that generated these receipts has since been retired, and the source checkout that the documented verification steps require is no longer public; the sha256 manifests and the Sigstore and Rekor transparency material remain independently checkable
 
 Featured campaign:
 
@@ -38,15 +39,15 @@ Paper linkage for the current NISQ campaign:
 - manuscript PDF: [commitments/nisq-benchmarking-evidence-2026-05-02/capsule/nisq_readiness.pdf](commitments/nisq-benchmarking-evidence-2026-05-02/capsule/nisq_readiness.pdf)
 - manuscript source: [commitments/nisq-benchmarking-evidence-2026-05-02/capsule/nisq_readiness.tex](commitments/nisq-benchmarking-evidence-2026-05-02/capsule/nisq_readiness.tex)
 - paper-facing capsule README: [commitments/nisq-benchmarking-evidence-2026-05-02/capsule/README.md](commitments/nisq-benchmarking-evidence-2026-05-02/capsule/README.md)
-- current public Zenodo record: [https://zenodo.org/records/19985231](https://zenodo.org/records/19985231)
-- current public Zenodo version DOI: [10.5281/zenodo.19985231](https://doi.org/10.5281/zenodo.19985231)
+- Zenodo record mirrored here: [https://zenodo.org/records/19985231](https://zenodo.org/records/19985231)
+- mirrored version DOI: [10.5281/zenodo.19985231](https://doi.org/10.5281/zenodo.19985231); latest version (concept DOI): [10.5281/zenodo.19954163](https://doi.org/10.5281/zenodo.19954163)
 
 Planned steady-state workflow for new campaigns:
 
 1. commit the declared evaluation-plan file or its exact hash here on day zero
 2. mirror the exact public release allowlist when the campaign has a paper-facing capsule
-3. emit an AIIR commitment receipt over the full public capsule mirror, copied public packet, and/or the exact released digest
-4. verify the AIIR receipt locally and, when available, attach a Sigstore bundle
+3. emit a commitment receipt over the full public capsule mirror, copied public packet, and/or the exact released digest
+4. verify the receipt locally and, when available, attach a Sigstore bundle
 5. mirror the same hash to an external transparency log such as Rekor or OpenTimestamps
 6. record the transparency-log entry in the campaign directory
 7. never rewrite history for prior commitments
